@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SoulWalking 老门东预设漫游路线静态演示版">
+  <title>SoulWalking · 老门东漫游</title>
+  <link rel="stylesheet" href="./static.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">SOULWALKING · 南京老门东</p>
+      <h1>把今天，交给一段漫游</h1>
+      <p class="lede">这是 SoulWalking 的静态体验版：根据你此刻想要的节奏，挑选一条已经实地整理好的老门东路线。</p>
+      <a class="button primary" href="#routes">开始挑选路线 ↓</a>
+    </header>
+
+    <section class="notice" aria-label="版本说明">
+      <strong>静态体验版</strong><span>路线为预设参考，不含 AI 实时生成、天气、导航、用户记忆与高德实时服务。</span>
+    </section>
+
+    <section id="routes" class="section">
+      <p class="eyebrow">CHOOSE YOUR WALK</p>
+      <h2>此刻，你更需要什么？</h2>
+      <div class="route-grid" id="route-grid"></div>
+    </section>
+
+    <section id="result" class="section result" hidden aria-live="polite">
+      <p class="eyebrow">YOUR PRESET ROUTE</p>
+      <h2 id="route-title"></h2>
+      <p id="route-intro" class="route-intro"></p>
+      <div id="route-meta" class="meta"></div>
+      <ol id="stop-list" class="stops"></ol>
+      <div class="route-actions">
+        <button id="copy-route" class="button secondary">复制路线文字</button>
+        <button id="print-route" class="button secondary">打印 / 保存为 PDF</button>
+      </div>
+    </section>
+
+    <section class="section how">
+      <p class="eyebrow">HOW TO USE</p>
+      <h2>到现场后这样走</h2>
+      <div class="steps">
+        <article><b>01</b><h3>选一条路线</h3><p>按当下心情选择安静、人文或热闹觅食路线。</p></article>
+        <article><b>02</b><h3>以现场为准</h3><p>巷弄会随活动、天气与营业时间变化，请留意现场提示。</p></article>
+        <article><b>03</b><h3>留下自己的发现</h3><p>路线只是开场；可以随时在喜欢的转角多停一会。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>城格·漫游 SoulWalking · 老门东静态体验版</footer>
+  <script src="./static.js"></script>
+</body>
+</html>
