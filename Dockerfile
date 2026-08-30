@@ -1,4 +1,4 @@
-# 默认用官方 python:3.12-slim（Render 可直连 Docker Hub）。
+# 默认用官方 python:3.12-slim（Hugging Face / Render 的构建环境均可直连 Docker Hub）。
 # 国内本地构建时通过 --build-arg 传入镜像源，例如：
 #   docker build --build-arg PYTHON_BASE_IMAGE=docker.m.daocloud.io/library/python:3.12-slim -t soulwalking:test .
 ARG PYTHON_BASE_IMAGE=python:3.12-slim
@@ -18,10 +18,9 @@ COPY web ./web
 
 RUN pip install .
 
-# 运行时数据目录（SQLite / Chroma，Render 免费档为临时盘）
+# 运行时数据目录（SQLite / Chroma）
 RUN mkdir -p /app/data
 
-EXPOSE 10000
-
-# Render 通过 $PORT 注入端口（免费档默认 10000），本地跑也回退到 10000
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
+# Hugging Face Spaces 要求监听 7860；Render 会注入 PORT=10000，因此用 ${PORT} 兼容两者
+EXPOSE 7860
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-7860}"]

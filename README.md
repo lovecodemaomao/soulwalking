@@ -1,3 +1,12 @@
+---
+title: SoulWalking 城格漫游智能体
+emoji: 🚶
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 7860
+---
+
 # SoulWalking：城格漫游 Agent
 
 SoulWalking 是一个面向南京老门东的单 Agent 项目。它把五维空间人格、当下自然语言需求、空间知识库、实时工具和跨会话偏好组合起来，输出有证据、可解释、满足硬约束的城市漫步路线。
