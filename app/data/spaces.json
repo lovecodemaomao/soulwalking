@@ -1,0 +1,2407 @@
+[
+  {
+    "id": "N001",
+    "name": "老门东牌坊",
+    "description": "老门东南入口标志性牌坊，人流密集",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782939,
+      "latitude": 32.015188,
+      "name": "老门东牌坊"
+    },
+    "map_coordinate": {
+      "longitude": 118.78814,
+      "latitude": 32.013141,
+      "name": "老门东牌坊"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "地标",
+      "热门",
+      "历史",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.26,
+      "bvi": 0.13,
+      "gvi": 0.32,
+      "visual_entropy": 0.69,
+      "traditional_visibility": 0.297025366786912,
+      "interface_transparency": 0.254327520459317,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 0.0583333333333333,
+      "accessible_node_density": 0.375,
+      "environmental_maintenance": 0.8,
+      "spatial_depth_stddev": 15.388824,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N001/001.png",
+        "alt": "老门东牌坊实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N002",
+    "name": "箍桶巷主街",
+    "description": "商业主街，店铺林立，业态丰富",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782503,
+      "latitude": 32.013915,
+      "name": "箍桶巷主街"
+    },
+    "map_coordinate": {
+      "longitude": 118.787704,
+      "latitude": 32.011869,
+      "name": "箍桶巷主街"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "商业",
+      "活力",
+      "美食",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.19,
+      "bvi": 0.2,
+      "gvi": 0.11,
+      "visual_entropy": 0.6,
+      "traditional_visibility": 0.681840737660725,
+      "interface_transparency": 0.216721354611558,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 0.408333333333333,
+      "accessible_node_density": 0.625,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 20.338847,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N002/002.jpg",
+        "alt": "箍桶巷主街实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N003",
+    "name": "中心广场",
+    "description": "商业主街，店铺林立，远眺城墙",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782262,
+      "latitude": 32.013167,
+      "name": "中心广场"
+    },
+    "map_coordinate": {
+      "longitude": 118.787463,
+      "latitude": 32.011121,
+      "name": "中心广场"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "主街",
+      "热闹",
+      "美食",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.29,
+      "bvi": 0.31,
+      "gvi": 0.05,
+      "visual_entropy": 0.61,
+      "traditional_visibility": 0.545470815772761,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 1.0,
+      "stay_activity_support": 0.233333333333333,
+      "accessible_node_density": 0.125,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 13.99544,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N003/003.png",
+        "alt": "中心广场实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N004",
+    "name": "城墙东（中）",
+    "description": "沿着城墙景观绿植丰富",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783195,
+      "latitude": 32.012383,
+      "name": "城墙东（中）"
+    },
+    "map_coordinate": {
+      "longitude": 118.788395,
+      "latitude": 32.010337,
+      "name": "城墙东（中）"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "城墙",
+      "景观",
+      "清幽",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.1,
+      "bvi": 0.37,
+      "gvi": 0.27,
+      "visual_entropy": 0.69,
+      "traditional_visibility": 0.29606008529663,
+      "interface_transparency": 0.048451211280282,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 0.466666666666667,
+      "accessible_node_density": 0.25,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 10.185672,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N004/004.jpg",
+        "alt": "城墙东（中）实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N005",
+    "name": "凉亭·城墙东（尾）",
+    "description": "城墙近段设有雅致凉亭，环境清幽，游人稀少。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783726,
+      "latitude": 32.012114,
+      "name": "凉亭·城墙东（尾）"
+    },
+    "map_coordinate": {
+      "longitude": 118.788925,
+      "latitude": 32.010067,
+      "name": "凉亭·城墙东（尾）"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "城墙",
+      "凉亭",
+      "静谧",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.25,
+      "bvi": 0.14,
+      "gvi": 0.37,
+      "visual_entropy": 0.65,
+      "traditional_visibility": 0.234490076700846,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 1.0,
+      "stay_activity_support": 0.466666666666667,
+      "accessible_node_density": 0.178571428571429,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 18.825073,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N005/005.jpg",
+        "alt": "凉亭·城墙东（尾）实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N006",
+    "name": "东二门",
+    "description": "东二门小巷空间精巧，景致清幽，游人稀少。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.784118,
+      "latitude": 32.0127,
+      "name": "东二门"
+    },
+    "map_coordinate": {
+      "longitude": 118.789317,
+      "latitude": 32.010652,
+      "name": "东二门"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "巷弄",
+      "清幽",
+      "巧思",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.01,
+      "bvi": 0.58,
+      "gvi": 0.27,
+      "visual_entropy": 0.51,
+      "traditional_visibility": 0.348912956799668,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 0.5,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.388888888888889,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 6.164746,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N006/006.jpg",
+        "alt": "东二门实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N007",
+    "name": "凌霄花·街巷",
+    "description": "窄巷凌霄花盛放，墙面配有彩绘，不少爱花人士在此拍照。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.784369,
+      "latitude": 32.013212,
+      "name": "凌霄花·街巷"
+    },
+    "map_coordinate": {
+      "longitude": 118.789567,
+      "latitude": 32.011164,
+      "name": "凌霄花·街巷"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "花巷",
+      "雅致",
+      "打卡",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.13,
+      "bvi": 0.59,
+      "gvi": 0.13,
+      "visual_entropy": 0.52,
+      "traditional_visibility": 0.729262474279835,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.163333333333333,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 6.249557,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N007/007.jpg",
+        "alt": "凌霄花·街巷实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N008",
+    "name": "芥子园·入口",
+    "description": "芥子园入口古朴雅致，墙面绘有梅花，园内设有亭台水榭。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783579,
+      "latitude": 32.013424,
+      "name": "芥子园·入口"
+    },
+    "map_coordinate": {
+      "longitude": 118.788779,
+      "latitude": 32.011377,
+      "name": "芥子园·入口"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "园林",
+      "古朴",
+      "雅致",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.06,
+      "bvi": 0.73,
+      "gvi": 0.05,
+      "visual_entropy": 0.46,
+      "traditional_visibility": 0.82844177587899,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 1.0,
+      "stay_activity_support": 0.272222222222222,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 3.706009,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N008/008.png",
+        "alt": "芥子园·入口实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N009",
+    "name": "窄巷",
+    "description": "主街延伸的窄巷布置精巧，一侧园林一侧商铺，游人络绎。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.78271,
+      "latitude": 32.013638,
+      "name": "窄巷"
+    },
+    "map_coordinate": {
+      "longitude": 118.787911,
+      "latitude": 32.011592,
+      "name": "窄巷"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "深巷",
+      "景致",
+      "闲趣",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.64,
+      "gvi": 0.13,
+      "visual_entropy": 0.53,
+      "traditional_visibility": 0.735175689061482,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.272222222222222,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 2.387146,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N009/009.jpg",
+        "alt": "窄巷实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N010",
+    "name": "小牌坊",
+    "description": "这条平行主街的巷弄动静相融，花木点缀，氛围雅致清幽。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782658,
+      "latitude": 32.013944,
+      "name": "小牌坊"
+    },
+    "map_coordinate": {
+      "longitude": 118.787859,
+      "latitude": 32.011898,
+      "name": "小牌坊"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "分趣",
+      "雅致",
+      "巷弄",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.01,
+      "bvi": 0.56,
+      "gvi": 0.09,
+      "visual_entropy": 0.56,
+      "traditional_visibility": 0.49343450864156,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.466666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 7.141956,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N010/010.jpg",
+        "alt": "小牌坊实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N011",
+    "name": "门东市集·竹里馆",
+    "description": "坐落于小巷深处，商业氛围清淡，树影错落，设有遮阴区域，环境雅致很适合拍照。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782841,
+      "latitude": 32.014394,
+      "name": "门东市集·竹里馆"
+    },
+    "map_coordinate": {
+      "longitude": 118.788042,
+      "latitude": 32.012347,
+      "name": "门东市集·竹里馆"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "市集",
+      "巷弄",
+      "静谧",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.69,
+      "gvi": 0.15,
+      "visual_entropy": 0.41,
+      "traditional_visibility": 0.496971306506552,
+      "interface_transparency": 0.144874343150615,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.777777777777778,
+      "accessible_node_density": 0.833333333333333,
+      "environmental_maintenance": 0.85,
+      "spatial_depth_stddev": 4.672508,
+      "visible_path_choice": 1.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N011/011.png",
+        "alt": "门东市集·竹里馆实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N012",
+    "name": "文创市集",
+    "description": "分布着多处小型外摆摊位，多条巷弄交错穿行，空间形态丰富多样。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783608,
+      "latitude": 32.014433,
+      "name": "文创市集"
+    },
+    "map_coordinate": {
+      "longitude": 118.788808,
+      "latitude": 32.012386,
+      "name": "文创市集"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "文创",
+      "市集",
+      "错落",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.08,
+      "bvi": 0.44,
+      "gvi": 0.09,
+      "visual_entropy": 0.71,
+      "traditional_visibility": 0.669858553201316,
+      "interface_transparency": 0.218027188969782,
+      "relative_walk_width": 0.5,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.466666666666667,
+      "accessible_node_density": 1.0,
+      "environmental_maintenance": 0.875,
+      "spatial_depth_stddev": 11.006501,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N012/012.png",
+        "alt": "文创市集实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N013",
+    "name": "文化展馆",
+    "description": "文化体验为主，商业氛围清淡，街道开阔并配有树池，环境清静人流量不大。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783494,
+      "latitude": 32.014017,
+      "name": "文化展馆"
+    },
+    "map_coordinate": {
+      "longitude": 118.788694,
+      "latitude": 32.01197,
+      "name": "文化展馆"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "文体验",
+      "宽街",
+      "闲适",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.25,
+      "gvi": 0.48,
+      "visual_entropy": 0.52,
+      "traditional_visibility": 0.497582125743317,
+      "interface_transparency": 0.174544652835987,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.933333333333333,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 7.387153,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N013/013.png",
+        "alt": "文化展馆实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N014",
+    "name": "漾应的火塘",
+    "description": "此处打造出大型户外空间，设有露天就餐区，巷路多样，兼具非遗体验，环境闲适。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783333,
+      "latitude": 32.013192,
+      "name": "漾应的火塘"
+    },
+    "map_coordinate": {
+      "longitude": 118.788533,
+      "latitude": 32.011145,
+      "name": "漾应的火塘"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "户外节点",
+      "非遗",
+      "休闲",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.07,
+      "bvi": 0.44,
+      "gvi": 0.17,
+      "visual_entropy": 0.68,
+      "traditional_visibility": 0.652715201200854,
+      "interface_transparency": 0.130655941464787,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 0.35,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 7.612708,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N014/014.png",
+        "alt": "漾应的火塘实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N015",
+    "name": "东出口",
+    "description": "通往居民区的小巷出口，建筑开口小巧，整体安静少人，无商业设施",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.784036,
+      "latitude": 32.012932,
+      "name": "东出口"
+    },
+    "map_coordinate": {
+      "longitude": 118.789235,
+      "latitude": 32.010884,
+      "name": "东出口"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "巷口",
+      "静幽",
+      "简约",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.1,
+      "bvi": 0.77,
+      "gvi": 0.05,
+      "visual_entropy": 0.36,
+      "traditional_visibility": 0.854083482477916,
+      "interface_transparency": 0.0684296734650745,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.0,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 5.605234,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N015/015.png",
+        "alt": "东出口实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N016",
+    "name": "茶舍",
+    "description": "历史建筑改造的茶社与文创空间，以内置售卖为主，保留建筑原生质感，陈设座椅，主打沉浸式体验。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782987,
+      "latitude": 32.013205,
+      "name": "茶舍"
+    },
+    "map_coordinate": {
+      "longitude": 118.788187,
+      "latitude": 32.011159,
+      "name": "茶舍"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "古建",
+      "茶社",
+      "文创",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.1,
+      "bvi": 0.63,
+      "gvi": 0.08,
+      "visual_entropy": 0.53,
+      "traditional_visibility": 0.774698920385659,
+      "interface_transparency": 0.0387025281014777,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 8.33899,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N016/016.png",
+        "alt": "茶舍实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N017",
+    "name": "气味艺术家",
+    "description": "商品品类丰富，涵盖文创，香品等，同时搭配景观设施，环境宜人。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782824,
+      "latitude": 32.0128,
+      "name": "气味艺术家"
+    },
+    "map_coordinate": {
+      "longitude": 118.788024,
+      "latitude": 32.010754,
+      "name": "气味艺术家"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "特色街",
+      "好物",
+      "景观",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.03,
+      "bvi": 0.28,
+      "gvi": 0.48,
+      "visual_entropy": 0.56,
+      "traditional_visibility": 0.463612955372091,
+      "interface_transparency": 0.0956203619160839,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.25,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 6.513695,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N017/017.png",
+        "alt": "气味艺术家实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N018",
+    "name": "木栅门",
+    "description": "僻静巷角以木门围合，墙边凌霄花点缀，商业稀少，环境清幽雅致。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783825,
+      "latitude": 32.012459,
+      "name": "木栅门"
+    },
+    "map_coordinate": {
+      "longitude": 118.789024,
+      "latitude": 32.010412,
+      "name": "木栅门"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "幽巷",
+      "木门",
+      "花木",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.03,
+      "bvi": 0.56,
+      "gvi": 0.22,
+      "visual_entropy": 0.49,
+      "traditional_visibility": 0.743476704578257,
+      "interface_transparency": 0.135992988873647,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.194444444444444,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 3.451342,
+      "visible_path_choice": 2.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N018/018.png",
+        "alt": "木栅门实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N019",
+    "name": "烟火·东二门",
+    "description": "入口无商业，林木点缀，古朴精致，连通市井街巷，可体验本地特色小吃，烟火气息浓厚。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.784198,
+      "latitude": 32.013249,
+      "name": "烟火·东二门"
+    },
+    "map_coordinate": {
+      "longitude": 118.789397,
+      "latitude": 32.011201,
+      "name": "烟火·东二门"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "古门",
+      "景致",
+      "市井",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.11,
+      "bvi": 0.6,
+      "gvi": 0.0,
+      "visual_entropy": 0.53,
+      "traditional_visibility": 0.248291669072224,
+      "interface_transparency": 0.183817654436368,
+      "relative_walk_width": 0.5,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.194444444444444,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 0.8,
+      "spatial_depth_stddev": 6.429426,
+      "visible_path_choice": 2.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N019/019.png",
+        "alt": "烟火·东二门实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N020",
+    "name": "城墙西（中）",
+    "description": "地处城墙中段，沿线绿植繁茂，毗邻老门东建筑，墙根处设有照片与艺术展览。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.7808,
+      "latitude": 32.013084,
+      "name": "城墙西（中）"
+    },
+    "map_coordinate": {
+      "longitude": 118.786003,
+      "latitude": 32.01104,
+      "name": "城墙西（中）"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "城墙",
+      "绿植",
+      "艺展",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.02,
+      "bvi": 0.15,
+      "gvi": 0.44,
+      "visual_entropy": 0.6,
+      "traditional_visibility": 0.47489290456671,
+      "interface_transparency": 0.103055179856454,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.35,
+      "accessible_node_density": 0.357142857142857,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 11.87131,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N020/020.png",
+        "alt": "城墙西（中）实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N021",
+    "name": "先锋书店",
+    "description": "下沉空间内的先锋书店，外侧配有亭廊，假山水池与古井，环境清幽雅致，游人不多。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.78012,
+      "latitude": 32.013311,
+      "name": "先锋书店"
+    },
+    "map_coordinate": {
+      "longitude": 118.785324,
+      "latitude": 32.011268,
+      "name": "先锋书店"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "书店",
+      "亭廊",
+      "雅致",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.05,
+      "bvi": 0.26,
+      "gvi": 0.39,
+      "visual_entropy": 0.58,
+      "traditional_visibility": 0.547183188037642,
+      "interface_transparency": 0.0,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 1.0,
+      "accessible_node_density": 0.357142857142857,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 11.539319,
+      "visible_path_choice": 1.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N021/021.png",
+        "alt": "先锋书店实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N022",
+    "name": "银兴菲林电影院",
+    "description": "侧餐饮搭配特色装饰，另一侧为黑底缀蓝的工业风改造建筑，街巷乔木繁茂，设有外摆，空间样式丰富，人流量适中。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.78073,
+      "latitude": 32.013484,
+      "name": "银兴菲林电影院"
+    },
+    "map_coordinate": {
+      "longitude": 118.785933,
+      "latitude": 32.01144,
+      "name": "银兴菲林电影院"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "餐饮",
+      "改造建筑",
+      "多元空间",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.04,
+      "bvi": 0.4,
+      "gvi": 0.16,
+      "visual_entropy": 0.62,
+      "traditional_visibility": 0.584738756422839,
+      "interface_transparency": 0.130853886231174,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.7,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 10.781505,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N022/022.png",
+        "alt": "银兴菲林电影院实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N023",
+    "name": "美食街·沈灶",
+    "description": "身处美食街，门头小巧实则内部空间开阔，内设庭院，格调雅致别有韵味。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781138,
+      "latitude": 32.013269,
+      "name": "美食街·沈灶"
+    },
+    "map_coordinate": {
+      "longitude": 118.786341,
+      "latitude": 32.011225,
+      "name": "美食街·沈灶"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "深巷门店",
+      "庭院",
+      "雅致",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.23,
+      "bvi": 0.51,
+      "gvi": 0.13,
+      "visual_entropy": 0.58,
+      "traditional_visibility": 0.625252583569078,
+      "interface_transparency": 0.226035941006938,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 8.782705,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N023/023.png",
+        "alt": "美食街·沈灶实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N024",
+    "name": "美食街·南京大牌档",
+    "description": "美食街上的南京大排档，设有户外外摆区域，特色鲜明，游人往来十分热闹。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781138,
+      "latitude": 32.013269,
+      "name": "美食街·南京大牌档"
+    },
+    "map_coordinate": {
+      "longitude": 118.786341,
+      "latitude": 32.011225,
+      "name": "美食街·南京大牌档"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "美食街",
+      "餐饮",
+      "热闹",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.13,
+      "bvi": 0.56,
+      "gvi": 0.06,
+      "visual_entropy": 0.57,
+      "traditional_visibility": 0.772686404504586,
+      "interface_transparency": 0.0431033445982513,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 10.321162,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N024/024.jpg",
+        "alt": "美食街·南京大牌档实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N025",
+    "name": "金陵手作坊",
+    "description": "隐于支巷内，自成院落格局，融合手作与特色小吃，设有户外摊位，屋顶爬满绿植。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781633,
+      "latitude": 32.013756,
+      "name": "金陵手作坊"
+    },
+    "map_coordinate": {
+      "longitude": 118.786835,
+      "latitude": 32.011711,
+      "name": "金陵手作坊"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "手作坊",
+      "院落",
+      "市井",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.09,
+      "bvi": 0.54,
+      "gvi": 0.06,
+      "visual_entropy": 0.61,
+      "traditional_visibility": 0.774372149414006,
+      "interface_transparency": 0.231943722836619,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.583333333333333,
+      "accessible_node_density": 0.833333333333333,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 9.47335,
+      "visible_path_choice": 0.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N025/025.png",
+        "alt": "金陵手作坊实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N026",
+    "name": "两棵枇杷树",
+    "description": "名为两棵枇杷树的特色民宿，街巷间皆可望见，果树果实成熟，小门半开，隐约可见别致庭院。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.780948,
+      "latitude": 32.013388,
+      "name": "两棵枇杷树"
+    },
+    "map_coordinate": {
+      "longitude": 118.786151,
+      "latitude": 32.011344,
+      "name": "两棵枇杷树"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "民宿",
+      "庭院",
+      "古树",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.02,
+      "bvi": 0.57,
+      "gvi": 0.31,
+      "visual_entropy": 0.48,
+      "traditional_visibility": 0.656918191790312,
+      "interface_transparency": 0.0286822125012916,
+      "relative_walk_width": 0.5,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.272222222222222,
+      "accessible_node_density": 0.416666666666667,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 6.700914,
+      "visible_path_choice": 0.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N026/026.png",
+        "alt": "两棵枇杷树实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N027",
+    "name": "餐饮市集",
+    "description": "街巷尺度小巧雅致，店铺多为大门入户，叠层窗口售卖的格局，装点各式彩灯，氛围别致。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781722,
+      "latitude": 32.013857,
+      "name": "餐饮市集"
+    },
+    "map_coordinate": {
+      "longitude": 118.786924,
+      "latitude": 32.011812,
+      "name": "餐饮市集"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "市集",
+      "街巷",
+      "彩灯",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.02,
+      "bvi": 0.71,
+      "gvi": 0.12,
+      "visual_entropy": 0.46,
+      "traditional_visibility": 0.814868656544079,
+      "interface_transparency": 0.222144764461014,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.875,
+      "spatial_depth_stddev": 6.330144,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N027/027.png",
+        "alt": "餐饮市集实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N028",
+    "name": "美食街·荔湾园",
+    "description": "空间融合通透展示商铺与石墙小门餐饮空间，搭配玻璃展面，近处无高大树木，远处林木林立。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781425,
+      "latitude": 32.013939,
+      "name": "美食街·荔湾园"
+    },
+    "map_coordinate": {
+      "longitude": 118.786627,
+      "latitude": 32.011894,
+      "name": "美食街·荔湾园"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "商铺",
+      "石墙",
+      "通透",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.17,
+      "bvi": 0.64,
+      "gvi": 0.01,
+      "visual_entropy": 0.51,
+      "traditional_visibility": 0.760027712025864,
+      "interface_transparency": 0.227090958528901,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 10.482979,
+      "visible_path_choice": 1.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N028/028.png",
+        "alt": "美食街·荔湾园实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N029",
+    "name": "三条营门",
+    "description": "设有挂灯树阵，建筑结合玻璃体块，空间开阔，人流偏少，风格现代别致。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.78069,
+      "latitude": 32.014449,
+      "name": "三条营门"
+    },
+    "map_coordinate": {
+      "longitude": 118.785893,
+      "latitude": 32.012405,
+      "name": "三条营门"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "入口",
+      "树阵",
+      "时尚",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.27,
+      "gvi": 0.54,
+      "visual_entropy": 0.54,
+      "traditional_visibility": 0.152396313364055,
+      "interface_transparency": 0.277060417663,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.163333333333333,
+      "accessible_node_density": 0.25,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 6.570689,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N029/029.jpg",
+        "alt": "三条营门实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N030",
+    "name": "金陵美术馆",
+    "description": "配有露天广场与下沉空间，下沉区域开设多样民俗体验，现场氛围热闹。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781243,
+      "latitude": 32.014809,
+      "name": "金陵美术馆"
+    },
+    "map_coordinate": {
+      "longitude": 118.786446,
+      "latitude": 32.012764,
+      "name": "金陵美术馆"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "美术馆",
+      "广场",
+      "民俗",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.14,
+      "bvi": 0.67,
+      "gvi": 0.0,
+      "visual_entropy": 0.44,
+      "traditional_visibility": 0.0,
+      "interface_transparency": 0.133366699042715,
+      "relative_walk_width": 1.0,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.25,
+      "environmental_maintenance": 0.875,
+      "spatial_depth_stddev": 10.007335,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N030/030.png",
+        "alt": "金陵美术馆实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N031",
+    "name": "金陵美术馆北侧",
+    "description": "金陵美术馆北侧一侧是老式民居，一侧为深色馆体，墙面陈列艺术展品，人居与艺术相融。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781574,
+      "latitude": 32.015235,
+      "name": "金陵美术馆北侧"
+    },
+    "map_coordinate": {
+      "longitude": 118.786776,
+      "latitude": 32.01319,
+      "name": "金陵美术馆北侧"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "艺境",
+      "街巷",
+      "交融",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.17,
+      "bvi": 0.51,
+      "gvi": 0.03,
+      "visual_entropy": 0.62,
+      "traditional_visibility": 0.0,
+      "interface_transparency": 0.287790102567316,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.25,
+      "environmental_maintenance": 0.875,
+      "spatial_depth_stddev": 11.142795,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N031/031.png",
+        "alt": "金陵美术馆北侧实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N032",
+    "name": "美食·DQ冰淇淋",
+    "description": "集聚特色餐店与酒馆，空间尺度小巧，景致丰富多样。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782598,
+      "latitude": 32.014575,
+      "name": "美食·DQ冰淇淋"
+    },
+    "map_coordinate": {
+      "longitude": 118.787799,
+      "latitude": 32.012529,
+      "name": "美食·DQ冰淇淋"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "巷隅",
+      "小店",
+      "多元",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.13,
+      "bvi": 0.44,
+      "gvi": 0.19,
+      "visual_entropy": 0.67,
+      "traditional_visibility": 0.233290225737544,
+      "interface_transparency": 0.274118046481959,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.466666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 12.852969,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N032/032.png",
+        "alt": "美食·DQ冰淇淋实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N033",
+    "name": "美食·火山屋台",
+    "description": "设有 DQ 门店，装饰将古朴风貌与时尚风格相融。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782168,
+      "latitude": 32.014299,
+      "name": "美食·火山屋台"
+    },
+    "map_coordinate": {
+      "longitude": 118.787369,
+      "latitude": 32.012253,
+      "name": "美食·火山屋台"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "巷弄",
+      "融合",
+      "潮流",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.59,
+      "gvi": 0.21,
+      "visual_entropy": 0.48,
+      "traditional_visibility": 0.330753062830167,
+      "interface_transparency": 0.310758009898411,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.49,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 8.373862,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N033/033.jpg",
+        "alt": "美食·火山屋台实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N034",
+    "name": "美食·绿柳居",
+    "description": "街巷集聚多家老牌食铺，灯笼彩鱼点缀其间，景致别致。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.781374,
+      "latitude": 32.014028,
+      "name": "美食·绿柳居"
+    },
+    "map_coordinate": {
+      "longitude": 118.786576,
+      "latitude": 32.011983,
+      "name": "美食·绿柳居"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "美食",
+      "街巷",
+      "老字号",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.05,
+      "bvi": 0.45,
+      "gvi": 0.08,
+      "visual_entropy": 0.57,
+      "traditional_visibility": 0.826499624732983,
+      "interface_transparency": 0.199805790875997,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 10.165351,
+      "visible_path_choice": 2.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N034/034.png",
+        "alt": "美食·绿柳居实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N035",
+    "name": "游客中心",
+    "description": "两处中心相邻，外配餐饮，可提供导览，地图等便民服务",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782487,
+      "latitude": 32.014582,
+      "name": "游客中心"
+    },
+    "map_coordinate": {
+      "longitude": 118.787688,
+      "latitude": 32.012536,
+      "name": "游客中心"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "便民",
+      "服务",
+      "综合",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.07,
+      "bvi": 0.58,
+      "gvi": 0.1,
+      "visual_entropy": 0.57,
+      "traditional_visibility": 0.580200912187518,
+      "interface_transparency": 0.245480226935334,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 0.925,
+      "spatial_depth_stddev": 11.645117,
+      "visible_path_choice": 1.0
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N035/035.png",
+        "alt": "游客中心实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N036",
+    "name": "泸溪河背面",
+    "description": "泸溪河后侧临水而建，建筑带桅杆颇具民国风情，空间充满探索趣味，是拍照好去处。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.783067,
+      "latitude": 32.01441,
+      "name": "泸溪河背面"
+    },
+    "map_coordinate": {
+      "longitude": 118.788267,
+      "latitude": 32.012363,
+      "name": "泸溪河背面"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "临水",
+      "民国",
+      "出片",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.0,
+      "bvi": 0.32,
+      "gvi": 0.3,
+      "visual_entropy": 0.62,
+      "traditional_visibility": 0.428379423820795,
+      "interface_transparency": 0.223451884125649,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.166666666666667,
+      "stay_activity_support": 0.933333333333333,
+      "accessible_node_density": 0.75,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 13.252963,
+      "visible_path_choice": 1.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N036/036.png",
+        "alt": "泸溪河背面实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  },
+  {
+    "id": "N037",
+    "name": "片仔癀博物馆",
+    "description": "从热闹街巷转入此处，周遭少商业，馆区安静清幽。",
+    "address": "南京市秦淮区老门东实测节点",
+    "coordinate": {
+      "longitude": 118.782903,
+      "latitude": 32.013985,
+      "name": "片仔癀博物馆"
+    },
+    "map_coordinate": {
+      "longitude": 118.788103,
+      "latitude": 32.011939,
+      "name": "片仔癀博物馆"
+    },
+    "coordinate_system": "WGS-84",
+    "coordinate_source": "空间属性总表.xlsx｜汇总表｜实地采集",
+    "coordinate_verified": true,
+    "map_coordinate_system": "GCJ-02",
+    "ocean": {
+      "openness": 50,
+      "conscientiousness": 50,
+      "extraversion": 50,
+      "agreeableness": 50,
+      "neuroticism": 50
+    },
+    "tags": [
+      "文博",
+      "静谧",
+      "隔世",
+      "实地采集"
+    ],
+    "price_level": null,
+    "opening_hours": "待核验",
+    "indoor": null,
+    "quiet_level": null,
+    "heat": 0.0,
+    "accessibility": null,
+    "features": {
+      "svi": 0.03,
+      "bvi": 0.43,
+      "gvi": 0.37,
+      "visual_entropy": 0.54,
+      "traditional_visibility": 0.589616072975001,
+      "interface_transparency": 0.0927887952589585,
+      "relative_walk_width": 0.7,
+      "historic_cultural_richness": 0.333333333333333,
+      "stay_activity_support": 0.116666666666667,
+      "accessible_node_density": 0.5,
+      "environmental_maintenance": 1.0,
+      "spatial_depth_stddev": 10.743727,
+      "visible_path_choice": 0.5
+    },
+    "images": [
+      {
+        "url": "/assets/spaces/N037/037.png",
+        "alt": "片仔癀博物馆实地采集照片",
+        "caption": "实地调研影像；空间属性与运营信息待人工复核。",
+        "source": "采集照片37.rar｜2026-06-07 实地采集",
+        "verified": false
+      }
+    ],
+    "source": "空间属性总表.xlsx 与采集照片37.rar（实地调研数据）",
+    "verified": true
+  }
+]

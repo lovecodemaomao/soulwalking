@@ -1,0 +1,428 @@
+{
+  "version": "fieldwork-mvp-2026-08-22",
+  "disclaimer": "参数为 MVP 临时演示权重，基于理论预期映射，非问卷实证或回归结论。",
+  "feature_fields": [
+    "svi",
+    "bvi",
+    "gvi",
+    "visual_entropy",
+    "traditional_visibility",
+    "interface_transparency",
+    "relative_walk_width",
+    "historic_cultural_richness",
+    "stay_activity_support",
+    "accessible_node_density",
+    "environmental_maintenance",
+    "spatial_depth_stddev",
+    "visible_path_choice"
+  ],
+  "perceptions": [
+    "safety",
+    "vitality",
+    "prosperity",
+    "beauty",
+    "boredom",
+    "oppression",
+    "humanistic_place",
+    "social_interaction"
+  ],
+  "behaviors": [
+    "entry",
+    "stay",
+    "record"
+  ],
+  "w1": {
+    "svi": {
+      "safety": 0.0,
+      "vitality": 0.0,
+      "prosperity": 0.0,
+      "beauty": 0.5,
+      "boredom": 0.0,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "bvi": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": 0.0,
+      "oppression": 0.0,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "gvi": {
+      "safety": 0.0,
+      "vitality": 0.0,
+      "prosperity": 0.0,
+      "beauty": 1.0,
+      "boredom": -0.5,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "visual_entropy": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": 0.0,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "traditional_visibility": {
+      "safety": 0.0,
+      "vitality": 0.0,
+      "prosperity": 0.0,
+      "beauty": 0.5,
+      "boredom": -0.5,
+      "oppression": 0.0,
+      "humanistic_place": 1.0,
+      "social_interaction": 0.0
+    },
+    "interface_transparency": {
+      "safety": 0.5,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.5
+    },
+    "relative_walk_width": {
+      "safety": 0.5,
+      "vitality": 0.0,
+      "prosperity": 0.0,
+      "beauty": 0.5,
+      "boredom": 0.0,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.5
+    },
+    "historic_cultural_richness": {
+      "safety": 0.0,
+      "vitality": 0.0,
+      "prosperity": 0.0,
+      "beauty": 0.5,
+      "boredom": -0.5,
+      "oppression": 0.0,
+      "humanistic_place": 1.0,
+      "social_interaction": 0.5
+    },
+    "stay_activity_support": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": 0.0,
+      "humanistic_place": 0.5,
+      "social_interaction": 1.0
+    },
+    "accessible_node_density": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": -0.5,
+      "humanistic_place": 0.5,
+      "social_interaction": 0.5
+    },
+    "environmental_maintenance": {
+      "safety": 1.0,
+      "vitality": 0.0,
+      "prosperity": 0.5,
+      "beauty": 0.5,
+      "boredom": 0.0,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "spatial_depth_stddev": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": 0.0,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    },
+    "visible_path_choice": {
+      "safety": 0.0,
+      "vitality": 0.5,
+      "prosperity": 0.0,
+      "beauty": 0.0,
+      "boredom": -0.5,
+      "oppression": -0.5,
+      "humanistic_place": 0.0,
+      "social_interaction": 0.0
+    }
+  },
+  "w2": {
+    "safety": {
+      "entry": 1.0,
+      "stay": 1.0,
+      "record": 0.0
+    },
+    "vitality": {
+      "entry": 0.5,
+      "stay": 0.0,
+      "record": 0.5
+    },
+    "prosperity": {
+      "entry": 0.5,
+      "stay": 0.5,
+      "record": 0.0
+    },
+    "beauty": {
+      "entry": 1.0,
+      "stay": 1.0,
+      "record": 0.5
+    },
+    "boredom": {
+      "entry": -0.5,
+      "stay": -0.5,
+      "record": -0.5
+    },
+    "oppression": {
+      "entry": -0.5,
+      "stay": -0.5,
+      "record": 0.0
+    },
+    "humanistic_place": {
+      "entry": 0.5,
+      "stay": 0.5,
+      "record": 0.5
+    },
+    "social_interaction": {
+      "entry": 0.5,
+      "stay": 0.5,
+      "record": 0.0
+    }
+  },
+  "m1": [
+    {
+      "personality": "openness",
+      "source": "historic_cultural_richness",
+      "target": "humanistic_place",
+      "beta": 0.35
+    },
+    {
+      "personality": "openness",
+      "source": "traditional_visibility",
+      "target": "humanistic_place",
+      "beta": 0.3
+    },
+    {
+      "personality": "openness",
+      "source": "visual_entropy",
+      "target": "boredom",
+      "beta": -0.25
+    },
+    {
+      "personality": "openness",
+      "source": "accessible_node_density",
+      "target": "boredom",
+      "beta": -0.2
+    },
+    {
+      "personality": "openness",
+      "source": "visible_path_choice",
+      "target": "boredom",
+      "beta": -0.25
+    },
+    {
+      "personality": "extraversion",
+      "source": "interface_transparency",
+      "target": "vitality",
+      "beta": 0.35
+    },
+    {
+      "personality": "extraversion",
+      "source": "stay_activity_support",
+      "target": "social_interaction",
+      "beta": 0.25
+    },
+    {
+      "personality": "extraversion",
+      "source": "accessible_node_density",
+      "target": "social_interaction",
+      "beta": 0.25
+    },
+    {
+      "personality": "agreeableness",
+      "source": "stay_activity_support",
+      "target": "social_interaction",
+      "beta": 0.2
+    },
+    {
+      "personality": "agreeableness",
+      "source": "interface_transparency",
+      "target": "social_interaction",
+      "beta": 0.15
+    },
+    {
+      "personality": "agreeableness",
+      "source": "accessible_node_density",
+      "target": "social_interaction",
+      "beta": 0.15
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "environmental_maintenance",
+      "target": "prosperity",
+      "beta": 0.2
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "environmental_maintenance",
+      "target": "safety",
+      "beta": 0.15
+    },
+    {
+      "personality": "neuroticism",
+      "source": "environmental_maintenance",
+      "target": "safety",
+      "beta": 0.3
+    },
+    {
+      "personality": "neuroticism",
+      "source": "svi",
+      "target": "oppression",
+      "beta": -0.25
+    }
+  ],
+  "m2": [
+    {
+      "personality": "openness",
+      "source": "humanistic_place",
+      "target": "entry",
+      "beta": 0.3
+    },
+    {
+      "personality": "openness",
+      "source": "humanistic_place",
+      "target": "stay",
+      "beta": 0.3
+    },
+    {
+      "personality": "openness",
+      "source": "humanistic_place",
+      "target": "record",
+      "beta": 0.35
+    },
+    {
+      "personality": "openness",
+      "source": "boredom",
+      "target": "entry",
+      "beta": -0.3
+    },
+    {
+      "personality": "openness",
+      "source": "boredom",
+      "target": "stay",
+      "beta": -0.3
+    },
+    {
+      "personality": "openness",
+      "source": "boredom",
+      "target": "record",
+      "beta": -0.2
+    },
+    {
+      "personality": "openness",
+      "source": "beauty",
+      "target": "record",
+      "beta": 0.15
+    },
+    {
+      "personality": "extraversion",
+      "source": "vitality",
+      "target": "entry",
+      "beta": 0.25
+    },
+    {
+      "personality": "extraversion",
+      "source": "vitality",
+      "target": "stay",
+      "beta": 0.35
+    },
+    {
+      "personality": "extraversion",
+      "source": "social_interaction",
+      "target": "entry",
+      "beta": 0.25
+    },
+    {
+      "personality": "extraversion",
+      "source": "social_interaction",
+      "target": "stay",
+      "beta": 0.35
+    },
+    {
+      "personality": "agreeableness",
+      "source": "social_interaction",
+      "target": "entry",
+      "beta": 0.2
+    },
+    {
+      "personality": "agreeableness",
+      "source": "social_interaction",
+      "target": "stay",
+      "beta": 0.3
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "safety",
+      "target": "entry",
+      "beta": 0.15
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "safety",
+      "target": "stay",
+      "beta": 0.15
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "prosperity",
+      "target": "entry",
+      "beta": 0.15
+    },
+    {
+      "personality": "conscientiousness",
+      "source": "prosperity",
+      "target": "stay",
+      "beta": 0.15
+    },
+    {
+      "personality": "neuroticism",
+      "source": "safety",
+      "target": "entry",
+      "beta": 0.3
+    },
+    {
+      "personality": "neuroticism",
+      "source": "safety",
+      "target": "stay",
+      "beta": 0.3
+    },
+    {
+      "personality": "neuroticism",
+      "source": "oppression",
+      "target": "entry",
+      "beta": -0.25
+    },
+    {
+      "personality": "neuroticism",
+      "source": "oppression",
+      "target": "stay",
+      "beta": -0.35
+    }
+  ]
+}

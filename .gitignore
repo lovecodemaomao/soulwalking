@@ -1,0 +1,26 @@
+# 密钥（绝不能提交）
+.env
+
+# Python
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 运行时数据（SQLite / Chroma / 模型缓存，启动时自动重建）
+/data/
+
+# 构建产物
+/dist/
+/build/
+*.exe
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

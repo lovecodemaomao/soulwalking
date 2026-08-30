@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "name": "老门东研究范围",
+  "coordinate_system": "GCJ-02",
+  "source": "ghfwExport_Output.shp",
+  "transform_note": "ArcGIS local image coordinates transformed with 南京市高德地图08271256_L18 world file; ArcGIS local y is downward, so map_y = origin_y + local_y * scale.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"id": "old_mendong_boundary", "name": "老门东核心范围"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [118.7851180,32.0113454],
+          [118.7859944,32.0133577],
+          [118.7900892,32.0125934],
+          [118.7894505,32.0108002],
+          [118.7897911,32.0107039],
+          [118.7897450,32.0105812],
+          [118.7893760,32.0098952],
+          [118.7892199,32.0095822],
+          [118.7888650,32.0100817],
+          [118.7880986,32.0104187],
+          [118.7872470,32.0107617],
+          [118.7860405,32.0110385],
+          [118.7856431,32.0111649],
+          [118.7851180,32.0113454]
+        ]]
+      }
+    }
+  ]
+}

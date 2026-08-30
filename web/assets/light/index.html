@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>城格·漫游 · 你的 Citywalk 导游</title>
+<link rel="stylesheet" href="/assets/light/styles.css?v=20260829-memory-recall-1">
+</head>
+<body>
+
+<!-- ① 封面 -->
+<section id="scr-cover" class="screen active">
+  <div class="skyline" aria-hidden="true">
+    <img class="skyline-illustration" src="/assets/light/old_mendong-silhouette.png" alt="" />
+    <div class="ink-scratches" aria-hidden="true">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0 55 C120 24 180 78 310 42 S520 28 650 52 S860 78 990 38 S1110 26 1200 48" />
+        <path d="M0 67 C150 48 235 72 380 54 S610 42 760 61 S1010 70 1200 55" />
+        <path d="M40 26 C170 42 250 18 410 32 S690 27 820 40 S1040 16 1160 29" />
+      </svg>
+    </div>
+    <div class="stars"></div>
+  </div>
+
+  <div class="cover-inner">
+    <div class="cover-badge">建筑 × 规划 × 心理 ※ 南京老门东 <span class="cover-seal" aria-label="城格印章">城格</span></div>
+    <h1>你好，我们是你的<br><em>Citywalk 导游</em></h1>
+    <p class="cover-lede">过去，我们作为设计者<span class="hl">亲手构筑空间</span>；<br>
+      如今，我们<span class="hl">读懂你的心境</span>，为你定制城市漫步路线，依旧得心应手。</p>
+    <p id="welcome-back" class="welcome-back" hidden></p>
+    <div class="cover-intro-action">
+      <button id="btn-enter-hub" class="btn btn-primary btn-big-cta">进入城格漫游 <span class="cta-arrow">→</span></button>
+    </div>
+    <p class="cover-foot">先了解你，再让合适的城市空间回应你</p>
+  </div>
+</section>
+
+<!-- ② 旅程选择 -->
+<section id="scr-hub" class="screen">
+  <header class="scr-head hub-head">
+    <button class="back" data-back="cover">←</button>
+    <div class="slogan">城格 · 漫游</div>
+  </header>
+  <div class="hub-wrap">
+    <div class="cover-actions">
+      <div class="cover-heart-choices">
+        <div class="heart-lines" aria-hidden="true">
+          <svg class="heart-ecg heart-ecg-red" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 30 H140 l12 0 7 -19 10 39 8 -20 H330 l12 0 7 -14 9 29 8 -15 H520 l14 0 8 -24 11 46 9 -22 H735 l12 0 7 -17 10 34 8 -17 H930 l14 0 8 -23 11 44 9 -21 H1200"/>
+          </svg>
+          <svg class="heart-ecg heart-ecg-gold" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 30 H115 l15 0 8 -15 10 31 9 -16 H300 l13 0 8 -21 11 42 9 -21 H500 l13 0 8 -16 10 33 8 -17 H700 l13 0 8 -23 11 45 9 -22 H900 l13 0 8 -17 10 35 9 -18 H1200"/>
+          </svg>
+        </div>
+        <button id="btn-start" class="btn btn-primary btn-heart-cta btn-heart-test">
+          <span class="cta-heart">✦</span>
+          <span class="cta-text">心动之钥</span>
+          <span class="cta-sub">认识你的空间人格</span>
+        </button>
+        <button id="btn-mood-start" class="btn btn-primary btn-heart-cta btn-heart-mood">
+          <span class="cta-heart">✦</span>
+          <span class="cta-text">心境之钥</span>
+          <span class="cta-sub">直接聊聊此刻的状态</span>
+        </button>
+      </div>
+      <button id="btn-resume" class="btn btn-ghost" hidden>「<span id="resume-name"></span>」，你好呀。请选择上面的两把钥匙之一。无论你选择哪一把，我都会尽量读懂你，再为你推荐一条适合此刻的 Soulwalking 路线。</button>
+    </div>
+    <div class="hub-entry-grid">
+      <article class="hub-entry-card hub-memory-card">
+      <div>
+          <span class="cover-memory-kicker">MEMORY</span>
+          <h3>你的漫游回忆</h3>
+          <p>自初次相逢，记忆便悄然生长</p>
+          <small id="cover-memory-summary" hidden>完成第一次测试后，记忆会从这里慢慢生长。</small>
+      </div>
+        <button id="btn-memory-cover" class="hub-icon-btn" aria-label="打开你的漫游回忆"><span class="hub-icon ui-memory" aria-hidden="true"></span></button>
+      </article>
+      <article class="hub-entry-card hub-city-card">
+        <div>
+          <span class="cover-memory-kicker">CITY PARTNERS</span>
+          <h3>城市共建计划</h3>
+          <p>始于老门东，步履不息，止于至善</p>
+        </div>
+        <button id="btn-city-plan" class="hub-icon-btn" aria-label="打开城市共建计划"><span class="hub-icon ui-city" aria-hidden="true"></span></button>
+      </article>
+    </div>
+    <p class="cover-foot">先了解你，再让合适的城市空间回应你</p>
+  </div>
+</section>
+
+<!-- ③ 空间测试 -->
+<section id="scr-test" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="hub">←</button>
+    <div class="slogan">心动之钥 · Soulwalking</div>
+    <div class="progress"><div id="test-progress"></div></div>
+  </header>
+  <div class="test-wrap">
+    <div class="journey-welcome journey-welcome-coral">
+      <span>HEART KEY · 心动之钥</span>
+      <h2>欢迎来到心动之钥</h2>
+      <p>您可以挑选您喜欢的空间场景，我会为您生成专属的 Soulwalking 路线。</p>
+    </div>
+    <div class="q-count"><span id="q-now">1</span> / 10</div>
+    <h2 id="q-title" class="q-title"></h2>
+    <div class="scene-pair" id="scene-pair"></div>
+    <div class="test-nav">
+      <button id="btn-prev-q" class="btn btn-outline test-nav-btn">上一题</button>
+      <span class="test-hint">凭直觉点一张图就好</span>
+      <button id="btn-skip-test" class="btn btn-outline test-nav-btn">跳过测试（也可以的）</button>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 空间人格 -->
+<section id="scr-persona" class="screen">
+  <header class="scr-head">
+    <div class="slogan">这是你的空间人格</div>
+  </header>
+  <div class="persona-wrap">
+    <div class="persona-tag-card">
+      <div class="persona-eyebrow">以后，我们就这样称呼你</div>
+      <div class="persona-nickname" id="persona-nickname">「深巷寻梦人」</div>
+      <div class="persona-poles" id="persona-poles"></div>
+      <p class="persona-blurb" id="persona-blurb"></p>
+      <div class="persona-likes" id="persona-likes"></div>
+      <button id="btn-share" class="stamp" title="分享我的空间人格">
+        <span class="stamp-inner">
+          <span class="stamp-top">城格·漫游</span>
+          <span class="stamp-mid">分享我的</span>
+          <span class="stamp-mid">空间人格</span>
+          <span class="stamp-top stamp-star">♥ 邮寄戳 ♥</span>
+        </span>
+      </button>
+    </div>
+    <div class="persona-actions">
+      <button id="btn-to-mood" class="btn btn-primary btn-big-cta">
+        <span class="cta-arrow">→</span> 以这个身份，进入聊聊你的心情
+      </button>
+      <button id="btn-persona-generate" class="btn btn-outline btn-big-cta">直接生成 Soulwalking 路线</button>
+      <button id="btn-retest" class="btn btn-ghost">我还想再测一次</button>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 心情聊天 -->
+<section id="scr-mood" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="persona">←</button>
+    <div class="slogan" id="mood-title">心境之钥 · Soulwalking</div>
+  </header>
+  <div class="mood-wrap">
+    <div class="journey-welcome journey-welcome-gold">
+      <span>MOOD KEY · 心境之钥</span>
+      <h2>欢迎来到心境之钥</h2>
+      <p>您可以和我随便聊聊今天的心情，我会为您生成一条回应此刻状态的 Soulwalking 路线。</p>
+    </div>
+    <section class="city-context" id="city-context" aria-live="polite">
+      <div class="city-context-head">
+        <div><span>OLD MENDONG · 此刻现场</span><h3>老门东天气与客流</h3></div>
+        <small id="city-context-time">正在更新</small>
+      </div>
+      <div class="city-context-grid">
+        <article><span class="context-label">实时天气</span><strong id="context-weather">正在查询天气数据…</strong><small id="context-weather-source">南京 · 老门东</small></article>
+        <article><span class="context-label">文旅客流快照</span><strong id="context-crowd">正在读取景区舒适度…</strong><small id="context-crowd-source">按官方发布时点更新</small></article>
+      </div>
+    </section>
+    <div class="chat" id="chat"></div>
+    <div class="chips" id="mood-chips"></div>
+    <div class="mood-input-row">
+      <button id="btn-mic" class="mic" title="语音输入" aria-label="语音输入"><span class="ui-icon ui-mic" aria-hidden="true"></span></button>
+      <input id="mood-input" type="text" placeholder="和导游说说今天…" autocomplete="off">
+      <button id="btn-send" class="btn btn-small">发送</button>
+    </div>
+    <div id="mic-status" class="mic-status" hidden></div>
+    <div class="mood-actions">
+      <button id="btn-mood-to-test" class="btn btn-outline mood-choice-btn">
+        <span>回到心动之钥</span><small>我想测测自己的空间人格</small>
+      </button>
+      <button id="btn-generate" class="btn btn-primary mood-choice-btn">
+        <span>生成 Soulwalking 路线</span><small>什么都不说也可以，慢慢来</small>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 思考 -->
+<section id="scr-think" class="screen">
+  <div class="think-wrap">
+    <div class="think-heart"><div class="heart"></div></div>
+    <div class="think-kicker">SOULWALKING AGENT · 正在连接线索</div>
+    <div class="think-title" id="think-title">正在为「你」认真思考…</div>
+    <p class="think-lede">我会把你说过的话、空间数据和现场条件放在一起，再慢慢得出这一次的路线。</p>
+    <div class="think-live" aria-live="polite">
+      <i aria-hidden="true"></i><span id="think-live-text">正在听懂你的话</span><span class="live-ellipsis" aria-hidden="true">•••</span>
+    </div>
+    <div class="think-steps" id="think-steps"></div>
+    <div class="think-ecg"><svg viewBox="0 0 400 40" preserveAspectRatio="none">
+      <path d="M0 20 H150 l8 0 4 -12 6 24 4 -12 H400" fill="none" stroke="#e85a50" stroke-width="2" class="ecg-run"/>
+    </svg></div>
+  </div>
+</section>
+
+<!-- ⑥ 路线结果 -->
+<section id="scr-route" class="screen">
+  <header class="scr-head">
+    <div class="slogan" id="route-title">今日 Soulwalking 路线</div>
+  </header>
+    <div class="route-wrap">
+    <div class="route-meta" id="route-meta"></div>
+    <section class="route-guide card" id="route-guide" hidden aria-live="polite">
+      <span class="route-guide-kicker">SOULWALKING GUIDE</span>
+      <h2>为你安排的这段漫游</h2>
+      <p id="route-guide-text"></p>
+      <small>基于你的当下需求、实测空间资料与路线信息生成。</small>
+    </section>
+    <div class="route-map card" id="route-map"></div>
+    <div class="route-map-actions">
+      <button id="btn-challenge" class="btn btn-outline"><span class="button-icon ui-challenge" aria-hidden="true"></span>挑战模式｜看看另一种城市吧</button>
+    </div>
+    <div id="route-badge" class="route-badge" hidden></div>
+    <div class="gentle-note" id="route-gentle">不是其他空间不好，只是此刻的你，或许更适合被安静、舒展的地方轻轻接住。</div>
+    <div class="route-stops" id="route-stops"></div>
+    <div class="route-actions">
+      <button id="btn-depart" class="btn btn-primary"><span class="button-icon ui-compass" aria-hidden="true"></span>立即出发｜开启一段心动漫游</button>
+      <button id="btn-open-print" class="btn btn-harvest">生成打卡地图｜分享好友或打印纸质版</button>
+    </div>
+
+    <div id="print-map-card" class="print-map-card">
+      <div class="pmc-head">
+        <div>
+          <small>CITYWALK CHECK-IN MAP</small>
+          <h3 id="print-route-title">老门东路线打卡地图</h3>
+          <p id="print-route-meta"></p>
+        </div>
+        <div class="pmc-brand"><b>城格·漫游</b><span>SoulWalking</span></div>
+      </div>
+      <p class="pmc-tip">到访后在方框里写日期、贴票根或盖小章；左上角序号对应路线顺序。</p>
+      <div id="print-route-map" class="print-route-map" aria-label="路线示意图"></div>
+      <div id="print-route-intro" class="print-route-intro"></div>
+      <div id="print-stop-grid" class="print-stop-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 打卡分享地图 -->
+<section id="scr-print" class="screen">
+  <header class="scr-head">
+    <div class="slogan">可分享的路线打卡地图</div>
+  </header>
+  <div class="route-wrap">
+    <div id="share-print-card" class="print-share-host"></div>
+    <div class="route-actions print-actions">
+      <button id="btn-copy-route-link" class="btn btn-outline">复制链接</button>
+      <button id="btn-download-route-image" class="btn btn-outline">下载路线海报</button>
+      <button id="btn-print-route" class="btn btn-primary">打印 / 保存为 PDF</button>
+      <button data-back="route" class="btn btn-outline">返回路线</button>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ 出发漫游 -->
+<section id="scr-walk" class="screen">
+  <header class="scr-head">
+    <div class="slogan" id="walk-title">出发漫游中</div>
+  </header>
+  <div class="walk-wrap">
+    <div class="departure-note" id="departure-note"><span>起点判断</span><p>结合您当前的位置与老门东各入口的通达条件，北门通常更便于抵达，也更适合作为这次路线的起点。这次，我们先从老门东北门慢慢出发。</p></div>
+    <div class="walk-progress" id="walk-progress"></div>
+    <div class="walk-route-story" id="walk-route-story"></div>
+    <div class="walk-map card" id="walk-map"></div>
+    <div class="walk-current card" id="walk-current"></div>
+    <div class="walk-stamps" id="walk-stamps"></div>
+    <div class="walk-actions">
+      <button id="btn-arrive" class="btn btn-primary"><span class="button-icon ui-pin" aria-hidden="true"></span>我到了这一站</button>
+      <button id="btn-next-stop" class="btn btn-outline" hidden>前往下一站 →</button>
+      <button id="btn-end-walk" class="btn btn-harvest">结束漫游 · 看看今天的收获</button>
+    </div>
+    <div class="walk-feedback" id="walk-feedback">
+      <div class="wf-label">路上有变化？随时喊我：</div>
+      <div class="chips" id="walk-chips"></div>
+      <div class="walk-feedback-input">
+        <button id="btn-walk-mic" class="mic" title="语音告诉我路上的变化" aria-label="语音告诉我路上的变化"><span class="ui-icon ui-mic" aria-hidden="true"></span></button>
+        <input id="walk-input" type="text" placeholder="告诉我路上发生了什么…" autocomplete="off">
+        <button id="btn-walk-send" class="btn btn-small">发送</button>
+      </div>
+      <div id="walk-mic-status" class="mic-status" hidden></div>
+    </div>
+    <div class="walk-explain-block">
+      <button id="btn-walk-explain" class="btn btn-outline btn-walk-explain">解释这次漫游 ✦</button>
+      <div id="walk-explain-panel" class="walk-explain-panel" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- 城市共建计划 -->
+<section id="scr-city-plan" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="hub">←</button>
+    <div class="slogan">城市共建计划</div>
+  </header>
+  <div class="city-plan-wrap">
+    <section class="city-plan-hero">
+      <span class="memory-kicker">CITY PARTNERS · 城市空间共建</span>
+      <h2>始于老门东，步履不息，<br>止于至善。</h2>
+      <p>我们希望让城市空间不只被看见，也被理解。每一个真实场所，都可以成为 Agent 认识城市、回应人的一部分。</p>
+    </section>
+
+    <div class="city-story-grid">
+      <article class="city-story-card">
+        <span>我们是谁</span>
+        <h3>从空间设计者，到城市漫游 Agent</h3>
+        <p>我们以建筑与城乡规划的空间理解为基础，把真实场所、人的偏好与当下心境连接起来，为每一次漫游寻找更合适的回应。</p>
+      </article>
+      <article class="city-story-card">
+        <span>设计理念</span>
+        <h3>不是给空间贴标签，而是理解人与空间的关系</h3>
+        <p>空间没有绝对的好坏。我们关注它在什么时间、什么情境下更适合谁，也让用户的喜欢、不喜欢和现场反馈持续修正推荐。</p>
+      </article>
+    </div>
+
+    <section class="city-plan-card">
+      <span class="memory-kicker">OUR PLAN</span>
+      <h3>我们的计划</h3>
+      <div class="city-network-list city-plan-list">
+        <span class="city-chip active"><i></i>老门东 · 试点中</span>
+        <span class="city-chip starting"><i></i>夫子庙 · 启动中</span>
+        <span class="city-chip starting"><i></i>小西湖 · 启动中</span>
+        <span class="city-chip starting"><i></i>白鹭洲 · 启动中</span>
+      </div>
+      <p>首站老门东已接入 37 个实测空间节点。未来，我们也会邀请更多街区、公共空间与城市伙伴加入，让每一段地方记忆都被更温柔地理解。</p>
+      <div class="city-contact">
+        <div><span>联系电话</span><a href="tel:185000888">185000888</a></div>
+        <div><span>联系邮箱</span><a href="mailto:000888@edu.cn">000888@edu.cn</a></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ⑨ 漫游记忆 -->
+<section id="scr-memory" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="hub">←</button>
+    <div class="slogan">你的漫游记忆</div>
+  </header>
+  <div class="memory-wrap">
+    <div class="memory-hero">
+      <span class="memory-kicker">SOUL MEMORY</span>
+      <h2>这是你与城市，<br>一起写下的回忆录。</h2>
+      <p>先看看留下了什么；想起哪一段，再轻轻点开。</p>
+      <div class="memory-stats" id="memory-stats"></div>
+    </div>
+
+    <div class="memory-detail-panels">
+    <section id="memory-detail-tests" class="memory-section memory-detail-panel" hidden>
+      <div class="memory-section-head">
+        <div><span>01</span><h3>测试过的你</h3></div>
+        <small>最近四次</small>
+      </div>
+      <div id="memory-profile-list" class="memory-profile-list"></div>
+      <button id="btn-memory-test" class="btn btn-outline memory-inline-action">再做一次空间测试</button>
+      <button class="memory-close" data-memory-close>收起这一页</button>
+    </section>
+
+    <section id="memory-detail-stable" class="memory-section memory-report-card memory-detail-panel" hidden>
+      <div class="memory-section-head">
+        <div><span>02</span><h3>最稳定的喜欢</h3></div>
+        <small>只作温和参考</small>
+      </div>
+      <div id="memory-report" class="memory-report"></div>
+      <button class="memory-close" data-memory-close>收起这一页</button>
+    </section>
+
+    <section id="memory-detail-distance" class="memory-section memory-detail-panel" hidden>
+      <div class="memory-section-head">
+        <div><span>03</span><h3>走过的路</h3></div>
+        <small>最近四段</small>
+      </div>
+      <div id="memory-journey-list" class="memory-journey-list"></div>
+      <button class="memory-close" data-memory-close>收起这一页</button>
+    </section>
+
+    <section id="memory-detail-likes" class="memory-section memory-detail-panel" hidden>
+      <div class="memory-section-head"><div><span>04</span><h3>心动过的场景</h3></div><small>点击回忆</small></div>
+      <div id="memory-like-list" class="memory-scene-memory"></div>
+      <button class="memory-close" data-memory-close>收起这一页</button>
+    </section>
+
+    <section id="memory-detail-photos" class="memory-section memory-detail-panel" hidden>
+      <div class="memory-section-head"><div><span>05</span><h3>拍照留住的场景</h3></div><small>你的城市相册</small></div>
+      <div id="memory-photo-list" class="memory-scene-memory"></div>
+      <button class="memory-close" data-memory-close>收起这一页</button>
+    </section>
+    <section id="memory-scene-recall" class="memory-scene-recall" hidden aria-live="polite"></section>
+    </div>
+
+    <section id="bigfive-easter-egg" class="bigfive-easter-egg" hidden>
+      <div><span>RESEARCH EGG · CBF-PI-15</span><h3>一枚可以随时打开的研究彩蛋</h3><p>如果你愿意，可以试试15道大五人格题。它不会定义你，只帮助我们再多理解一点。</p></div>
+      <button id="btn-bigfive-entry" class="btn btn-outline">轻轻打开</button>
+    </section>
+  </div>
+</section>
+
+<!-- ⑩ CBF-PI-15 中国大五人格量表 -->
+<section id="scr-bigfive" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="memory">←</button>
+    <div class="slogan">CBF-PI-15 · 中国大五人格量表</div>
+    <div class="progress"><div id="bigfive-progress"></div></div>
+  </header>
+  <div class="bigfive-wrap">
+    <div class="bigfive-intro">
+      <span>RESEARCH-BASED · 15 ITEMS</span>
+      <h2>没有标准答案，<br>只需要选择更像你的那一个。</h2>
+      <p>我们会把结果当作理解空间偏好的补充线索，而不是对你的定义或诊断。</p>
+    </div>
+    <div class="bigfive-count"><span id="bigfive-now">1</span> / 15</div>
+    <article class="bigfive-question-card">
+      <h3 id="bigfive-question"></h3>
+      <div id="bigfive-options" class="bigfive-options"></div>
+    </article>
+    <div class="bigfive-nav">
+      <button id="btn-bigfive-prev" class="btn btn-outline">上一题</button>
+      <small>凭第一感受选择就好</small>
+    </div>
+  </div>
+</section>
+
+<section id="scr-bigfive-result" class="screen">
+  <header class="scr-head">
+    <button class="back" data-back="memory">←</button>
+    <div class="slogan">大五人格 · 补充画像</div>
+  </header>
+  <div class="bigfive-result-wrap">
+    <div class="bigfive-result-head">
+      <span>ONE MORE WAY TO KNOW YOU</span>
+      <h2>谢谢你，让我们又多认识了你一点。</h2>
+      <p>这不是结论，只是五束不同方向的光。我们会轻轻地把它加入路线推荐。</p>
+    </div>
+    <div id="bigfive-space-persona" class="bigfive-space-persona"></div>
+    <div class="bigfive-result-grid">
+      <div id="bigfive-radar" class="bigfive-radar"></div>
+      <div id="bigfive-bars" class="bigfive-bars"></div>
+    </div>
+    <div class="bigfive-result-note">已按“原偏好 70% ＋ 大五映射 30%”融入后续空间推荐；结果仅用于改善 Soulwalking 推荐，不构成医学、心理或人格诊断。</div>
+    <div class="bigfive-result-actions">
+      <button id="btn-bigfive-mood" class="btn btn-primary">带着这份理解，聊聊今天</button>
+      <button id="btn-bigfive-memory" class="btn btn-outline">回到漫游记忆</button>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ 漫游结束·反馈 -->
+<section id="scr-finish" class="screen">
+  <div class="finish-wrap">
+    <div class="finish-heart"><div class="heart"></div></div>
+    <h2 class="finish-title">漫游结束 ♥</h2>
+    <div class="finish-summary" id="finish-summary"></div>
+    <div class="finish-stamps" id="finish-stamps"></div>
+    <div class="finish-favorites" id="finish-favorites">
+      <div class="wf-label">今天哪一站最让你心动？<span class="ff-sub">可点选，告诉我们下次多带你来这里</span></div>
+      <div class="finish-fav-grid" id="finish-fav-grid"></div>
+    </div>
+    <div class="finish-rate">
+      <div class="wf-label">这次旅程合心意吗？</div>
+      <div class="stars-row" id="stars-row"></div>
+    </div>
+    <input id="finish-note" class="finish-input" type="text" placeholder="一句话记录今天（可选）">
+    <div class="finish-actions">
+      <button id="btn-submit-finish" class="btn btn-primary">提交反馈</button>
+      <button id="btn-finish-home" class="btn btn-ghost">回到首页</button>
+    </div>
+  </div>
+</section>
+
+<!-- 盖章弹窗 -->
+<div id="stamp-modal" class="stamp-modal" hidden>
+  <div class="stamp-modal-mask"></div>
+  <div class="stamp-modal-box">
+    <div class="stamp-pop" id="stamp-pop">
+      <div class="stamp-pop-ring">打卡成功</div>
+      <div class="stamp-pop-name" id="stamp-pop-name"></div>
+      <div class="stamp-pop-sub">印章已收入你的漫游护照</div>
+    </div>
+    <div id="stamp-inline-note" class="stamp-inline-note" role="status" hidden>
+      <span>♡</span><p>抱歉，我会记住，努力学习。</p>
+    </div>
+    <div class="stamp-modal-actions">
+      <div class="stamp-acts-row">
+        <button class="stamp-mini" data-stamp-act="like" title="点赞这一站" aria-pressed="false">
+          <span class="sa-icon" aria-hidden="true"></span><span class="sa-text">点赞</span>
+        </button>
+        <button class="stamp-mini" data-stamp-act="dislike" title="这一站不太适合" aria-pressed="false">
+          <span class="sa-icon" aria-hidden="true"></span><span class="sa-text">踩一下</span>
+        </button>
+        <button class="stamp-mini" data-stamp-act="comment" title="评论这一站" aria-pressed="false">
+          <span class="sa-icon" aria-hidden="true"></span><span class="sa-text">评论</span>
+        </button>
+        <button class="stamp-mini" data-stamp-act="photo" title="拍照收藏" aria-pressed="false">
+          <span class="sa-icon" aria-hidden="true"></span><span class="sa-text">拍照收藏</span>
+        </button>
+      </div>
+      <button class="btn btn-primary stamp-collect" data-stamp-act="close">
+        收好印章，继续走走 <span class="arrow-right">→</span>
+      </button>
+    </div>
+    <input id="stamp-note-input" class="finish-input stamp-comment-input" type="text" placeholder="写一句评论，按回车保存…" hidden>
+  </div>
+</div>
+
+<!-- 感谢·居中弹层（finish 提交后显示） -->
+<div id="thanks-modal" class="thanks-modal" hidden>
+  <div class="thanks-card">
+    <div class="thanks-heart">
+      <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 80 L12 42 Q4 28 16 18 Q28 8 40 18 Q44 22 50 28 Q56 22 60 18 Q72 8 84 18 Q96 28 88 42 Z"
+          fill="url(#t-h)"/>
+        <defs><linearGradient id="t-h" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#e85a50"/><stop offset="1" stop-color="#d44a40"/>
+        </linearGradient></defs>
+      </svg>
+    </div>
+    <div class="thanks-msg" id="thanks-msg"></div>
+    <button id="btn-thanks-ok" class="btn btn-primary">回到首页</button>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<div id="err-fallback" class="toast" style="background:var(--coral-deep);color:#fff;display:block" hidden></div>
+
+<script src="/assets/light/data.js?v=20260829-canonical-node-names-1"></script>
+<script src="/assets/light/app.js?v=20260829-bigfive-profile-1"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

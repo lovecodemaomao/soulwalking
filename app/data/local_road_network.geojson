@@ -1,0 +1,1942 @@
+{
+  "type": "FeatureCollection",
+  "name": "老门东本地道路网络",
+  "coordinate_system": "GCJ-02",
+  "source": "D:\\........东大研二上\\0826\\老门东道路网络.shp",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 1,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78800036,
+            32.01286966
+          ],
+          [
+            118.78753624,
+            32.01162042
+          ],
+          [
+            118.78730205,
+            32.01092719
+          ],
+          [
+            118.78719134,
+            32.01075389
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 2,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78543845,
+            32.01207896
+          ],
+          [
+            118.78573935,
+            32.01201156
+          ],
+          [
+            118.78662502,
+            32.01183344
+          ],
+          [
+            118.78732901,
+            32.01165051
+          ],
+          [
+            118.78753624,
+            32.01162042
+          ],
+          [
+            118.78773211,
+            32.01160237
+          ],
+          [
+            118.78841339,
+            32.01144832
+          ],
+          [
+            118.78906061,
+            32.01126057
+          ],
+          [
+            118.7895886,
+            32.01118354
+          ],
+          [
+            118.79024717,
+            32.01099098
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 3,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78769382,
+            32.01204458
+          ],
+          [
+            118.78695928,
+            32.01218978
+          ],
+          [
+            118.78661863,
+            32.01225838
+          ],
+          [
+            118.78648238,
+            32.01228365
+          ],
+          [
+            118.78637167,
+            32.01239197
+          ],
+          [
+            118.7863078,
+            32.01245696
+          ],
+          [
+            118.78572445,
+            32.01257972
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 4,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78728288,
+            32.01308158
+          ],
+          [
+            118.78722753,
+            32.01294799
+          ],
+          [
+            118.78704444,
+            32.01235948
+          ],
+          [
+            118.78700343,
+            32.01218105
+          ],
+          [
+            118.78698057,
+            32.01203814
+          ],
+          [
+            118.78695502,
+            32.01198759
+          ],
+          [
+            118.78689115,
+            32.01200203
+          ],
+          [
+            118.78656328,
+            32.01207063
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 5,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78661863,
+            32.01225838
+          ],
+          [
+            118.78656328,
+            32.01207063
+          ],
+          [
+            118.78647032,
+            32.01186456
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 6,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78624922,
+            32.01190902
+          ],
+          [
+            118.78619283,
+            32.01173847
+          ],
+          [
+            118.78611619,
+            32.01151822
+          ],
+          [
+            118.78600548,
+            32.01135936
+          ],
+          [
+            118.78582238,
+            32.01110301
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 7,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78530291,
+            32.01166986
+          ],
+          [
+            118.78602472,
+            32.01138697
+          ],
+          [
+            118.78730205,
+            32.01092719
+          ],
+          [
+            118.78823668,
+            32.01067335
+          ],
+          [
+            118.78863268,
+            32.01059031
+          ],
+          [
+            118.78906699,
+            32.01047838
+          ],
+          [
+            118.78952686,
+            32.01033115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 8,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78800036,
+            32.01286966
+          ],
+          [
+            118.78792488,
+            32.01297286
+          ],
+          [
+            118.78728288,
+            32.01308158
+          ],
+          [
+            118.78657367,
+            32.01319912
+          ],
+          [
+            118.78600026,
+            32.01335316
+          ],
+          [
+            118.78585832,
+            32.01338686
+          ],
+          [
+            118.78580723,
+            32.01347833
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 9,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78600026,
+            32.01335316
+          ],
+          [
+            118.78572445,
+            32.01257972
+          ],
+          [
+            118.78543845,
+            32.01207896
+          ],
+          [
+            118.78530291,
+            32.01166986
+          ],
+          [
+            118.78510891,
+            32.01132646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 10,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78510891,
+            32.01132646
+          ],
+          [
+            118.78582238,
+            32.01110301
+          ],
+          [
+            118.78719134,
+            32.01075389
+          ],
+          [
+            118.78837462,
+            32.01032348
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 11,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78743484,
+            32.01132028
+          ],
+          [
+            118.79067489,
+            32.01046911
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 12,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78837462,
+            32.01032348
+          ],
+          [
+            118.78879427,
+            32.01010203
+          ],
+          [
+            118.78899298,
+            32.00999372
+          ],
+          [
+            118.78930523,
+            32.00986734
+          ],
+          [
+            118.78953233,
+            32.00963867
+          ],
+          [
+            118.78975232,
+            32.00948221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 13,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78916126,
+            32.00992561
+          ],
+          [
+            118.78914201,
+            32.00975301
+          ],
+          [
+            118.78919878,
+            32.00958451
+          ],
+          [
+            118.78929814,
+            32.00943407
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 14,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7879003,
+            32.01260033
+          ],
+          [
+            118.78808261,
+            32.012554
+          ],
+          [
+            118.78792507,
+            32.01211352
+          ],
+          [
+            118.78782713,
+            32.01179579
+          ],
+          [
+            118.78773211,
+            32.01160237
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 15,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78761925,
+            32.01184386
+          ],
+          [
+            118.78782713,
+            32.01179579
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 16,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78788983,
+            32.01199919
+          ],
+          [
+            118.78800171,
+            32.01194021
+          ],
+          [
+            118.78815074,
+            32.01188606
+          ],
+          [
+            118.78821887,
+            32.01183551
+          ],
+          [
+            118.78829977,
+            32.01174163
+          ],
+          [
+            118.78851268,
+            32.01168387
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 17,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7889257,
+            32.01276702
+          ],
+          [
+            118.78882351,
+            32.01237709
+          ],
+          [
+            118.78862764,
+            32.01191494
+          ],
+          [
+            118.78851268,
+            32.01168387
+          ],
+          [
+            118.78841339,
+            32.01144832
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 18,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78803979,
+            32.01243427
+          ],
+          [
+            118.78812094,
+            32.01239875
+          ],
+          [
+            118.78826571,
+            32.01239153
+          ],
+          [
+            118.78834235,
+            32.01239153
+          ],
+          [
+            118.78840197,
+            32.01244208
+          ],
+          [
+            118.7884999,
+            32.01285728
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 19,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78840197,
+            32.01244208
+          ],
+          [
+            118.78882351,
+            32.01237709
+          ],
+          [
+            118.78937705,
+            32.01221461
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 20,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78858257,
+            32.01241423
+          ],
+          [
+            118.78852971,
+            32.01222545
+          ],
+          [
+            118.7884488,
+            32.01221461
+          ],
+          [
+            118.78835939,
+            32.0122435
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 21,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78834235,
+            32.01239153
+          ],
+          [
+            118.78835939,
+            32.0122435
+          ],
+          [
+            118.78829977,
+            32.01208825
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 22,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78826571,
+            32.01239153
+          ],
+          [
+            118.78809062,
+            32.01190791
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 23,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78812094,
+            32.01239875
+          ],
+          [
+            118.78783559,
+            32.01157897
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 24,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7879787,
+            32.01154661
+          ],
+          [
+            118.787891,
+            32.01136975
+          ],
+          [
+            118.788023,
+            32.01130115
+          ],
+          [
+            118.78789952,
+            32.01095092
+          ],
+          [
+            118.78808261,
+            32.01089676
+          ],
+          [
+            118.78804132,
+            32.01072641
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 25,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7881247,
+            32.01041439
+          ],
+          [
+            118.78830829,
+            32.01088954
+          ],
+          [
+            118.78837642,
+            32.01087149
+          ],
+          [
+            118.78844029,
+            32.01088593
+          ],
+          [
+            118.78859655,
+            32.01139518
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 26,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78848962,
+            32.0114262
+          ],
+          [
+            118.78834897,
+            32.01108014
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 27,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78862908,
+            32.01100655
+          ],
+          [
+            118.78873689,
+            32.01135447
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 28,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78870541,
+            32.0109865
+          ],
+          [
+            118.78852575,
+            32.01061273
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 29,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78863268,
+            32.01059031
+          ],
+          [
+            118.78845335,
+            32.01028194
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 30,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78931073,
+            32.01122408
+          ],
+          [
+            118.78922152,
+            32.01085092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 31,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7889279,
+            32.01092805
+          ],
+          [
+            118.78906061,
+            32.01126057
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 32,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78947214,
+            32.01078508
+          ],
+          [
+            118.7895886,
+            32.01118354
+          ],
+          [
+            118.78981989,
+            32.01185717
+          ],
+          [
+            118.78992634,
+            32.01209547
+          ],
+          [
+            118.79010943,
+            32.01260094
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 33,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78937705,
+            32.01221461
+          ],
+          [
+            118.7899117,
+            32.0120627
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 34,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78816695,
+            32.01211874
+          ],
+          [
+            118.78829977,
+            32.01208825
+          ],
+          [
+            118.78865485,
+            32.01197914
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 35,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7883678,
+            32.01206734
+          ],
+          [
+            118.78821887,
+            32.01183551
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 35,
+        "part_id": 2,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78736609,
+            32.01111679
+          ],
+          [
+            118.78791459,
+            32.01099367
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 36,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78769401,
+            32.01104318
+          ],
+          [
+            118.7876052,
+            32.01084486
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 37,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78783353,
+            32.01078284
+          ],
+          [
+            118.78775064,
+            32.01055045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 38,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78887056,
+            32.01006045
+          ],
+          [
+            118.78901596,
+            32.01043697
+          ],
+          [
+            118.78906699,
+            32.01047838
+          ],
+          [
+            118.78912241,
+            32.01066624
+          ],
+          [
+            118.78970789,
+            32.01050376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 39,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78936703,
+            32.01081269
+          ],
+          [
+            118.78930475,
+            32.01061564
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 40,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78931073,
+            32.01122408
+          ],
+          [
+            118.78934162,
+            32.01127601
+          ],
+          [
+            118.78924369,
+            32.01133739
+          ],
+          [
+            118.78929905,
+            32.01139154
+          ],
+          [
+            118.78931608,
+            32.01150347
+          ],
+          [
+            118.78930969,
+            32.0115811
+          ],
+          [
+            118.78937995,
+            32.01165872
+          ],
+          [
+            118.78932034,
+            32.01173455
+          ],
+          [
+            118.78924582,
+            32.0117526
+          ],
+          [
+            118.78913937,
+            32.01179592
+          ],
+          [
+            118.78908402,
+            32.01179773
+          ],
+          [
+            118.78902014,
+            32.01179592
+          ],
+          [
+            118.78896692,
+            32.0118212
+          ],
+          [
+            118.78890092,
+            32.0118555
+          ],
+          [
+            118.78863455,
+            32.01193125
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 41,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78893981,
+            32.01183529
+          ],
+          [
+            118.78889453,
+            32.01175079
+          ],
+          [
+            118.78885621,
+            32.0116515
+          ],
+          [
+            118.7888115,
+            32.01155582
+          ],
+          [
+            118.78880512,
+            32.01148542
+          ],
+          [
+            118.78879234,
+            32.01143848
+          ],
+          [
+            118.78880937,
+            32.01140418
+          ],
+          [
+            118.7889286,
+            32.01139154
+          ],
+          [
+            118.78902227,
+            32.01142765
+          ],
+          [
+            118.78924369,
+            32.01133739
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 42,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78867544,
+            32.0113723
+          ],
+          [
+            118.78870079,
+            32.01147278
+          ],
+          [
+            118.78875402,
+            32.01148903
+          ],
+          [
+            118.78880512,
+            32.01148542
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 43,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78634675,
+            32.01096928
+          ],
+          [
+            118.78639854,
+            32.0110426
+          ],
+          [
+            118.7864979,
+            32.0110089
+          ],
+          [
+            118.78707982,
+            32.01086447
+          ],
+          [
+            118.78723037,
+            32.01081499
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 44,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78707982,
+            32.01086447
+          ],
+          [
+            118.78714084,
+            32.01098522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 45,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78619461,
+            32.01132582
+          ],
+          [
+            118.78633893,
+            32.01158659
+          ],
+          [
+            118.78636448,
+            32.01169731
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 46,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78619283,
+            32.01173847
+          ],
+          [
+            118.78669376,
+            32.01160825
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 47,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78654957,
+            32.01184862
+          ],
+          [
+            118.78649961,
+            32.01165872
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 48,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78716462,
+            32.01214919
+          ],
+          [
+            118.78711957,
+            32.01198615
+          ],
+          [
+            118.78701954,
+            32.01173093
+          ],
+          [
+            118.78698331,
+            32.01163713
+          ],
+          [
+            118.78688679,
+            32.01163232
+          ],
+          [
+            118.78679312,
+            32.0113531
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 49,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78631133,
+            32.01153671
+          ],
+          [
+            118.78679312,
+            32.0113531
+          ],
+          [
+            118.78688679,
+            32.01131218
+          ],
+          [
+            118.78691518,
+            32.01126164
+          ],
+          [
+            118.78691518,
+            32.01116535
+          ],
+          [
+            118.78686975,
+            32.0110828
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 50,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78662382,
+            32.01141762
+          ],
+          [
+            118.78669376,
+            32.01160825
+          ],
+          [
+            118.78674486,
+            32.01169249
+          ],
+          [
+            118.78688679,
+            32.01163232
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 51,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78787281,
+            32.01298168
+          ],
+          [
+            118.78778429,
+            32.01283262
+          ],
+          [
+            118.78761681,
+            32.01285669
+          ],
+          [
+            118.78752597,
+            32.01249564
+          ],
+          [
+            118.78745216,
+            32.01229585
+          ],
+          [
+            118.78736984,
+            32.01231992
+          ],
+          [
+            118.78732232,
+            32.01211802
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 52,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78719528,
+            32.01284433
+          ],
+          [
+            118.78737836,
+            32.0127941
+          ],
+          [
+            118.78739539,
+            32.01274837
+          ],
+          [
+            118.78735849,
+            32.01265691
+          ],
+          [
+            118.78732726,
+            32.01248841
+          ],
+          [
+            118.7872052,
+            32.01246194
+          ],
+          [
+            118.78714842,
+            32.01242824
+          ],
+          [
+            118.7870776,
+            32.01216639
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 53,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78715205,
+            32.01270537
+          ],
+          [
+            118.78736659,
+            32.01267698
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 54,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78734449,
+            32.01258137
+          ],
+          [
+            118.78753875,
+            32.01254644
+          ],
+          [
+            118.78785725,
+            32.01248445
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 55,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7876795,
+            32.01251905
+          ],
+          [
+            118.7875036,
+            32.01208218
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 56,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.7863078,
+            32.01245696
+          ],
+          [
+            118.78657367,
+            32.01319912
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 57,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78618804,
+            32.01248216
+          ],
+          [
+            118.7861704,
+            32.01237728
+          ],
+          [
+            118.7858404,
+            32.01240436
+          ],
+          [
+            118.78579427,
+            32.01239232
+          ],
+          [
+            118.78573935,
+            32.01201156
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 58,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78800036,
+            32.01286966
+          ],
+          [
+            118.78809005,
+            32.01288876
+          ],
+          [
+            118.78813618,
+            32.01293089
+          ],
+          [
+            118.7889257,
+            32.01276702
+          ],
+          [
+            118.79010943,
+            32.01260094
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 59,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78525126,
+            32.01128188
+          ],
+          [
+            118.78527418,
+            32.01136504
+          ],
+          [
+            118.78537212,
+            32.01136143
+          ],
+          [
+            118.78550344,
+            32.01159127
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 60,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78773765,
+            32.01216255
+          ],
+          [
+            118.78792507,
+            32.01211352
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 61,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78930523,
+            32.00986734
+          ],
+          [
+            118.78952686,
+            32.01033115
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "老门东道路网络.shp",
+        "feature_id": 62,
+        "part_id": 1,
+        "coordinate_system": "GCJ-02"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.78905663,
+            32.00996796
+          ],
+          [
+            118.78912154,
+            32.01021442
+          ],
+          [
+            118.78923074,
+            32.01023053
+          ],
+          [
+            118.78929659,
+            32.01040487
+          ]
+        ]
+      }
+    }
+  ]
+}

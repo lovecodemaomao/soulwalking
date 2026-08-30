@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: soulwalking
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: EMBEDDING_BACKEND
+        value: hash
+      - key: CONSTRAINT_PARSING_MODE
+        value: heuristic
+      - key: TOOL_SELECTION_MODE
+        value: policy
+      # 以下密钥由你在 Render 后台填写，不会写入仓库（sync: false）
+      - key: AMAP_API_KEY
+        sync: false
+      - key: AMAP_JS_KEY
+        sync: false
+      - key: AMAP_SECURITY_JS_CODE
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
