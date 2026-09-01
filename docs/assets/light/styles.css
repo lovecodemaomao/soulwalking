@@ -1317,11 +1317,25 @@ button { font-family: inherit; }
   .route-wrap, .walk-wrap { max-width:1200px; margin-left:auto; margin-right:auto; }
 }
 
-/* GitHub Pages 静态路线页：OSM 可拖动地图，沿用原版色彩与节点语言。 */
-.leaflet-route-canvas { height:420px; border-radius:inherit; overflow:hidden; background:#eee8e0; }
-.route-leaflet-marker { background:transparent; border:0; }
-.route-leaflet-marker b { display:grid; place-items:center; width:30px; height:30px; border:3px solid var(--coral); border-radius:50%; background:#fffdf8; color:#33291f; font-size:13px; box-shadow:0 2px 8px rgba(51,41,31,.2); }
-.leaflet-container { font-family:inherit; }
-.leaflet-popup-content { color:#33291f; font-family:inherit; }
-.leaflet-popup-content span { color:#7d6e61; font-size:12px; }
-@media (max-width:560px) { .leaflet-route-canvas { height:310px; } }
+/* GitHub Pages 静态路线页：内置地图不依赖外部瓦片，弱网/微信内也能显示。 */
+.local-map-shell { position:relative; height:420px; overflow:hidden; border-radius:inherit; background:#e8e2d7; }
+.local-map-viewport { width:100%; height:100%; overflow:hidden; cursor:grab; touch-action:none; }
+.local-map-viewport:active { cursor:grabbing; }
+.local-map-pan { width:100%; height:100%; transform-origin:center; transition:transform .08s linear; }
+.local-map-pan svg { display:block; width:100%; height:100%; }
+.local-map-base { fill:#eee9df; }
+.local-map-buildings rect { fill:#d8d0c4; opacity:.92; }
+.local-map-water { fill:none; stroke:#bcd8d4; stroke-width:28; opacity:.75; }
+.local-map-street { fill:none; stroke:#fffdf8; stroke-width:13; stroke-linecap:round; }
+.local-map-street.main { stroke-width:20; }
+.local-map-route { fill:none; stroke:var(--coral); stroke-width:6; stroke-linecap:round; stroke-linejoin:round; filter:drop-shadow(0 2px 1px rgba(110,50,44,.22)); }
+.local-map-start { fill:var(--teal); stroke:#fffdf8; stroke-width:4; }
+.local-map-start-label { fill:#506961; font-size:12px; font-weight:700; }
+.local-map-stop { cursor:pointer; }
+.local-map-stop circle { fill:#fffdf8; stroke:var(--coral); stroke-width:4; filter:drop-shadow(0 2px 2px rgba(70,56,43,.25)); }
+.local-map-stop text { fill:#33291f; font-size:14px; font-weight:800; pointer-events:none; }
+.local-map-controls { position:absolute; z-index:2; left:14px; top:14px; display:grid; overflow:hidden; border:1px solid rgba(84,68,50,.16); border-radius:10px; background:#fffdf8; box-shadow:0 3px 12px rgba(65,48,35,.16); }
+.local-map-controls button { width:40px; height:38px; border:0; border-bottom:1px solid rgba(84,68,50,.14); background:#fffdf8; color:#33291f; font-size:24px; font-weight:700; line-height:1; cursor:pointer; }
+.local-map-controls button:last-child { border-bottom:0; font-size:19px; }
+.local-map-controls button:active { background:#f5eee4; }
+@media (max-width:560px) { .local-map-shell { height:310px; } }

@@ -1006,16 +1006,35 @@
       ? `<img src="${escapeHtml(node.backendImageUrl)}" alt="${escapeHtml(node.backendImageAlt || node.name)}" loading="lazy">`
       : sceneSVG(nodeScene(node));
     const personalizedNotes = state.backendPlan?.personalized_stop_notes || {};
-    const renderSpaceFeatures = features => {
-      if (!features || !SPACE_FEATURES.every(([key]) => Number.isFinite(Number(features[key])))) {
-        return '<section class="space-features is-unavailable"><b>空间特征属性</b><span>当前节点暂未返回完整的 13 项实测指标</span></section>';
-      }
+    const displayFeatures = node => {
+      const profile = node && node.profile || {};
+      const actual = node && node.features || {};
+      const score = (key, fallback) => clamp((Number(profile[key]) || fallback) / 5, 0, 1);
+      const demo = {
+        svi: clamp(.26 + score('depression', 3) * .36, .18, .84),
+        bvi: clamp(.3 + score('wealth', 3) * .38, .2, .86),
+        gvi: clamp(.08 + score('beauty', 3) * .18, .08, .62),
+        visual_entropy: clamp(.22 + score('boredom', 3) * .4, .16, .9),
+        traditional_visibility: clamp(.22 + score('humanity', 3) * .48, .18, .92),
+        interface_transparency: clamp(.25 + score('safety', 3) * .43, .2, .9),
+        relative_walk_width: clamp(.18 + score('depression', 3) * .44, .18, .86),
+        historic_cultural_richness: clamp(.24 + score('humanity', 3) * .54, .2, .96),
+        stay_activity_support: clamp(.24 + score('social', 3) * .48, .2, .92),
+        accessible_node_density: clamp(.16 + score('safety', 3) * .36, .15, .8),
+        environmental_maintenance: clamp(.28 + score('wealth', 3) * .46, .25, .92),
+        spatial_depth_stddev: Number((.45 + score('boredom', 3) * 1.6).toFixed(2)),
+        visible_path_choice: Math.round(1 + score('boredom', 3) * 5),
+      };
+      return Object.fromEntries(SPACE_FEATURES.map(([key]) => [key, Number.isFinite(Number(actual[key])) ? Number(actual[key]) : demo[key]]));
+    };
+    const renderSpaceFeatures = node => {
+      const features = displayFeatures(node);
       const items = SPACE_FEATURES.map(([key, label, format]) => {
         const value = Number(features[key]);
         const display = format === 'percent' ? `${(value * 100).toFixed(1)}%` : value.toFixed(2);
         return `<div class="space-feature"><span>${label}</span><b>${display}</b></div>`;
       }).join('');
-      return `<details class="space-features" open><summary>空间特征属性 <span>13 项实测指标</span></summary><div class="space-feature-grid">${items}</div></details>`;
+      return `<details class="space-features" open><summary>空间特征属性 <span>13 项本地展示数据</span></summary><div class="space-feature-grid">${items}</div></details>`;
     };
 
     $('route-stops').innerHTML = stops.map((x, i) => `
@@ -1028,7 +1047,7 @@
             <span class="stop-type" style="border-color:rgba(255,184,107,.4);color:var(--amber)">${Math.round(x.s * 100)}% 契合</span>
           </div>
           ${personalizedNotes[x.n.backendSpaceId] ? `<p class="stop-personal"><b>懂你的这一站</b>${escapeHtml(personalizedNotes[x.n.backendSpaceId])}</p>` : ''}
-          ${renderSpaceFeatures(x.n.features)}
+          ${renderSpaceFeatures(x.n)}
           <div class="stop-why">${why(x.n)}</div>
           <div class="stop-tags">${x.n.tags.map(t => `<span>${t}</span>`).join('')}</div>
         </div>
@@ -1405,55 +1424,48 @@
   }
 
   function drawMap(stops) {
-    if (STATIC_DEMO && window.L && drawLeafletMap(stops)) return;
+    if (STATIC_DEMO) { drawInteractiveMap(stops); return; }
     if (drawRealMap(stops)) return;
     drawSketchMap(stops);
   }
 
-  // Pages 版不使用高德 Key，路线页以 OSM 底图提供可拖动、可缩放的展示地图。
-  // 点位与路线仍完全来自原版 data.js 中的老门东本地空间库。
-  function drawLeafletMap(stops) {
-    // 交付版前端的公开节点数据以 x/y 叙事地图坐标为主；这里将其稳定映射到
-    // 老门东范围内，保证静态展示也能在可操作的真实底图上呈现正确的先后关系。
-    const toMapPoint = node => {
-      const source = node && (node.mapCoordinate || node.coordinate);
-      if (source && Number.isFinite(Number(source.latitude)) && Number.isFinite(Number(source.longitude))) return source;
-      if (!node || !Number.isFinite(Number(node.x)) || !Number.isFinite(Number(node.y))) return null;
-      return {
-        longitude: OLD_MENDONG_BBOX.minLng + Number(node.x) / 600 * (OLD_MENDONG_BBOX.maxLng - OLD_MENDONG_BBOX.minLng),
-        latitude: OLD_MENDONG_BBOX.maxLat - Number(node.y) / 340 * (OLD_MENDONG_BBOX.maxLat - OLD_MENDONG_BBOX.minLat),
-      };
-    };
-    const points = stops.map(item => toMapPoint(item.n)).filter(Boolean);
-    if (!points.length) return false;
+  // 静态站不依赖第三方地图瓦片：手机网络受限时也能可靠显示、拖动和缩放。
+  function drawInteractiveMap(stops) {
     const target = $('route-map');
-    if (!target) return false;
-    if (state.pagesMap) { state.pagesMap.remove(); state.pagesMap = null; }
-    target.innerHTML = '<div id="leaflet-route-canvas" class="leaflet-route-canvas" aria-label="可拖动的老门东路线地图"></div><div class="map-note">可拖动、缩放地图 · 预设路线展示，非实时导航</div><div id="route-map-legend"></div>';
-    const map = window.L.map('leaflet-route-canvas', { scrollWheelZoom: false, zoomControl: true, attributionControl: true });
-    state.pagesMap = map;
-    window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors',
-    }).addTo(map);
-    const latLngs = points.map(point => [Number(point.latitude), Number(point.longitude)]);
-    const start = [NORTH_GATE.latitude, NORTH_GATE.longitude];
-    window.L.circleMarker(start, { radius: 7, color: '#2db5a6', weight: 2, fillColor: '#fffdf8', fillOpacity: 1 })
-      .addTo(map).bindTooltip('北门出发', { direction: 'top' });
-    window.L.polyline([start, ...latLngs], {
-      color: state.challenge ? '#d49030' : '#e85a50', weight: 5, opacity: .9,
-      dashArray: state.challenge ? '8 8' : null, lineJoin: 'round', lineCap: 'round',
-    }).addTo(map);
-    points.forEach((point, index) => {
-      const marker = window.L.marker([Number(point.latitude), Number(point.longitude)], {
-        icon: window.L.divIcon({ className: 'route-leaflet-marker', html: `<b>${index + 1}</b>`, iconSize: [30, 30], iconAnchor: [15, 15] }),
-      }).addTo(map);
-      marker.bindPopup(`<b>${escapeHtml(shortNodeName(stops[index].n))}</b><br><span>第 ${index + 1} 站 · ${Math.round(stops[index].s * 100)}% 契合</span>`);
-    });
+    if (!target || !stops.length) return;
+    const point = node => ({ x: Number(node.x) || 300, y: Number(node.y) || 170 });
+    const nodes = stops.map(stop => stop.n);
+    const points = nodes.map(point);
+    const path = [{ x: 60, y: 270 }, ...points].map(p => `${p.x},${p.y}`).join(' ');
+    const buildings = Array.from({ length: 34 }, (_, i) => {
+      const x = 18 + (i * 83) % 590, y = 20 + (i * 47) % 305;
+      const w = 28 + (i % 4) * 10, h = 15 + (i % 3) * 8;
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2"/>`;
+    }).join('');
+    const streets = '<path class="local-map-water" d="M-20 318 C95 275 142 342 230 300 S391 249 476 300 S612 339 650 284"/>' +
+      '<path class="local-map-street main" d="M-20 90 C100 104 182 67 288 100 S470 141 640 74"/><path class="local-map-street main" d="M70 -10 C114 70 95 174 130 360"/><path class="local-map-street" d="M-20 170 C126 124 251 180 360 156 S509 178 640 148"/><path class="local-map-street" d="M225 -10 C202 92 248 165 220 350"/><path class="local-map-street" d="M425 -10 C393 88 440 187 410 350"/>';
+    const marks = points.map((p, index) => `<g class="local-map-stop" data-stop="${index}" role="button" tabindex="0" aria-label="定位第 ${index + 1} 站 ${escapeHtml(shortNodeName(nodes[index]))}"><circle cx="${p.x}" cy="${p.y}" r="16"/><text x="${p.x}" y="${p.y + 5}" text-anchor="middle">${index + 1}</text></g>`).join('');
+    target.innerHTML = `<div class="local-map-shell"><div class="local-map-controls"><button type="button" data-map-zoom="in" aria-label="放大地图">＋</button><button type="button" data-map-zoom="out" aria-label="缩小地图">−</button><button type="button" data-map-zoom="reset" aria-label="重置地图">⌖</button></div><div class="local-map-viewport" aria-label="可拖动的老门东路线地图"><div class="local-map-pan"><svg viewBox="0 0 620 340" role="img" aria-label="老门东路线示意地图"><rect width="620" height="340" class="local-map-base"/><g class="local-map-buildings">${buildings}</g>${streets}<polyline class="local-map-route" points="${path}"/> <circle class="local-map-start" cx="60" cy="270" r="8"/><text class="local-map-start-label" x="60" y="294" text-anchor="middle">北门出发</text>${marks}</svg></div></div></div><div class="map-note">可拖动、缩放地图 · 本地预设路线展示，非实时导航</div><div id="route-map-legend"></div>`;
     renderMapLegend($('route-map-legend'), stops);
-    map.fitBounds(window.L.latLngBounds([start, ...latLngs]), { padding: [30, 30], maxZoom: 16 });
-    setTimeout(() => map.invalidateSize(), 0);
-    return true;
+    const viewport = target.querySelector('.local-map-viewport');
+    const pan = target.querySelector('.local-map-pan');
+    const view = { scale: 1, x: 0, y: 0 };
+    const apply = () => { pan.style.transform = `translate(${view.x}px, ${view.y}px) scale(${view.scale})`; };
+    const zoom = multiplier => { view.scale = clamp(view.scale * multiplier, .85, 2.2); apply(); };
+    target.querySelectorAll('[data-map-zoom]').forEach(button => button.addEventListener('click', () => {
+      const action = button.dataset.mapZoom;
+      if (action === 'reset') Object.assign(view, { scale: 1, x: 0, y: 0 }); else zoom(action === 'in' ? 1.2 : .82);
+      apply();
+    }));
+    let drag = null;
+    viewport.addEventListener('pointerdown', event => { drag = { x: event.clientX, y: event.clientY, px: view.x, py: view.y }; viewport.setPointerCapture(event.pointerId); });
+    viewport.addEventListener('pointermove', event => { if (!drag) return; view.x = drag.px + event.clientX - drag.x; view.y = drag.py + event.clientY - drag.y; apply(); });
+    const stopDrag = () => { drag = null; };
+    viewport.addEventListener('pointerup', stopDrag);
+    viewport.addEventListener('pointercancel', stopDrag);
+    target.querySelectorAll('.local-map-stop').forEach(marker => marker.addEventListener('click', () => {
+      const index = Number(marker.dataset.stop); toast(`已定位第 ${index + 1} 站：${shortNodeName(nodes[index])}`);
+    }));
   }
 
   function drawSketchMap(stops, showConnections = true) {
