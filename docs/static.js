@@ -12,25 +12,38 @@ const questions = [
 ];
 
 const routes = {
-  quiet: { title: '城墙听风线', tags: ['独处友好', '约 60 分钟', '约 1.2 km'], summary: '沿着城墙脚下的绿意与窄巷慢慢走，把步伐交给可以停留的转角。', reason: '你在这次选择中更偏好安静、可呼吸的空间与松弛节奏，所以优先安排了人流相对舒缓、可随时停留的节点。', stops: [['老门东牌坊', '从开阔入口开始，先确认方向与当下人流。'], ['城墙东侧步道', '在城墙脚下停一会，感受绿意与开阔视野。'], ['窄巷转角', '放慢脚步，看门头、光影和生活痕迹。'], ['檐下茶舍', '用一段休息，为这次漫游留出余白。']], color: '#5f826f', point: '72,315 154,260 266,215 400,126' },
-  culture: { title: '旧城拾光线', tags: ['人文漫游', '约 90 分钟', '约 2.0 km'], summary: '把城墙、园林入口、书店与展览空间串成一段可以慢读的旧城下午。', reason: '你更在意建筑、故事和探索感，因此这条路线会把有文化线索的地点排在步行顺序里，并保留延长停留的余地。', stops: [['老门东牌坊', '从牌坊进入，观察新旧建筑尺度如何交织。'], ['中心广场', '在开阔位置理解街区与城墙的关系。'], ['芥子园入口', '沿巷道向园林方向走，留意门洞与传统肌理。'], ['先锋书店', '在书店或檐下休息，挑一本与南京有关的书。'], ['金陵美术馆', '以展览与建筑外部空间收束这次漫游。']], color: '#4c778d', point: '70,315 156,265 246,184 355,148 438,80' },
-  lively: { title: '街巷寻味线', tags: ['朋友同行', '约 120 分钟', '约 2.4 km'], summary: '在主街的烟火气与一段文化停留之间切换，适合结伴吃逛的傍晚。', reason: '你选择了更有生活感和探索感的体验，路线会把店铺、手作与餐饮密度较高的街段放在核心位置。', stops: [['箍桶巷主街', '从主街进入，先感受老门东最有烟火气的一面。'], ['文化展馆', '在热闹之间插入一段较安静的文化停留。'], ['金陵手作坊', '看看手作与地方材料，把“逛”变成一次发现。'], ['南京大牌档周边', '按现场排队与营业情况选择小吃或正餐。'], ['绿柳居附近', '用一份点心或小吃，为街巷漫游收尾。']], color: '#b35d42', point: '72,315 142,247 234,278 334,204 438,145' },
-  photo: { title: '巷陌光影线', tags: ['适合拍照', '约 100 分钟', '约 1.8 km'], summary: '在门洞、砖墙、树影和街巷尺度之间游走，为光线与偶遇留出时间。', reason: '你偏好慢走、观察与探索，适合一条以光影、门头和空间层次为重点的预设拍照路线。', stops: [['老门东牌坊', '从入口取一张完整的街区开场。'], ['砖墙门洞', '观察门洞框景与新旧材料的交界。'], ['巷陌树影', '留意不同时间的光线落点。'], ['庭院转角', '在较安静的尺度里寻找细节。'], ['城墙远望点', '以更开阔的视野结束这条路线。']], color: '#9b6d48', point: '72,315 135,230 225,160 335,205 434,112' }
+  quiet: { title: '城墙听风线', tags: ['独处友好', '约 60 分钟', '约 1.2 km'], summary: '沿着城墙脚下的绿意与窄巷慢慢走，把步伐交给可以停留的转角。', reason: '你在这次选择中更偏好安静、可呼吸的空间与松弛节奏，所以优先安排了人流相对舒缓、可随时停留的节点。', stops: [['老门东牌坊', '从开阔入口开始，先确认方向与当下人流。'], ['城墙东侧步道', '在城墙脚下停一会，感受绿意与开阔视野。'], ['窄巷转角', '放慢脚步，看门头、光影和生活痕迹。'], ['檐下茶舍', '用一段休息，为这次漫游留出余白。']], color: '#5f826f', coords: [[32.01818,118.78565],[32.01854,118.78629],[32.01789,118.78698],[32.01742,118.78722]] },
+  culture: { title: '旧城拾光线', tags: ['人文漫游', '约 90 分钟', '约 2.0 km'], summary: '把城墙、园林入口、书店与展览空间串成一段可以慢读的旧城下午。', reason: '你更在意建筑、故事和探索感，因此这条路线会把有文化线索的地点排在步行顺序里，并保留延长停留的余地。', stops: [['老门东牌坊', '从牌坊进入，观察新旧建筑尺度如何交织。'], ['中心广场', '在开阔位置理解街区与城墙的关系。'], ['芥子园入口', '沿巷道向园林方向走，留意门洞与传统肌理。'], ['先锋书店', '在书店或檐下休息，挑一本与南京有关的书。'], ['金陵美术馆', '以展览与建筑外部空间收束这次漫游。']], color: '#4c778d', coords: [[32.01818,118.78565],[32.01795,118.78634],[32.01736,118.78715],[32.01691,118.78670],[32.01638,118.78748]] },
+  lively: { title: '街巷寻味线', tags: ['朋友同行', '约 120 分钟', '约 2.4 km'], summary: '在主街的烟火气与一段文化停留之间切换，适合结伴吃逛的傍晚。', reason: '你选择了更有生活感和探索感的体验，路线会把店铺、手作与餐饮密度较高的街段放在核心位置。', stops: [['箍桶巷主街', '从主街进入，先感受老门东最有烟火气的一面。'], ['文化展馆', '在热闹之间插入一段较安静的文化停留。'], ['金陵手作坊', '看看手作与地方材料，把“逛”变成一次发现。'], ['南京大牌档周边', '按现场排队与营业情况选择小吃或正餐。'], ['绿柳居附近', '用一份点心或小吃，为街巷漫游收尾。']], color: '#b35d42', coords: [[32.01801,118.78543],[32.01747,118.78615],[32.01708,118.78688],[32.01674,118.78767],[32.01633,118.78716]] },
+  photo: { title: '巷陌光影线', tags: ['适合拍照', '约 100 分钟', '约 1.8 km'], summary: '在门洞、砖墙、树影和街巷尺度之间游走，为光线与偶遇留出时间。', reason: '你偏好慢走、观察与探索，适合一条以光影、门头和空间层次为重点的预设拍照路线。', stops: [['老门东牌坊', '从入口取一张完整的街区开场。'], ['砖墙门洞', '观察门洞框景与新旧材料的交界。'], ['巷陌树影', '留意不同时间的光线落点。'], ['庭院转角', '在较安静的尺度里寻找细节。'], ['城墙远望点', '以更开阔的视野结束这条路线。']], color: '#9b6d48', coords: [[32.01818,118.78565],[32.01771,118.78610],[32.01716,118.78661],[32.01683,118.78731],[32.01642,118.78668]] }
 };
 
 const state = { index: 0, answers: [], persona: null, routeId: 'quiet', chatText: '', checkin: 0, mealAdded: false };
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
+let mapInstance;
+let mapRouteLayer;
+let mapMarkers = [];
 
-function go(name) {
+function show(name) {
+  const valid = ['landing', 'quiz', 'persona', 'chat', 'thinking', 'route', 'checkin', 'memory'];
+  name = valid.includes(name) ? name : 'landing';
   all('.screen').forEach(screen => screen.classList.toggle('active', screen.id === name));
   all('[data-go]').forEach(button => button.classList.toggle('selected', button.dataset.go === name));
   if (name === 'quiz') renderQuestion();
   if (name === 'chat') renderChat();
-  if (name === 'route') renderRoute();
+  if (name === 'route') { renderRoute(); window.setTimeout(renderMap, 0); }
   if (name === 'memory') renderMemory();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+function go(name) {
+  const target = `#/${name}`;
+  if (location.hash !== target) location.hash = target;
+  else show(name);
+}
+
+function activeScreenFromHash() { return location.hash.replace(/^#\//, '') || 'landing'; }
 
 function renderQuestion() {
   const item = questions[state.index];
@@ -96,8 +109,36 @@ function renderRoute() {
   $('#route-badges').innerHTML = route.tags.map(tag => `<span>${tag}</span>`).join(''); $('#route-reason').textContent = route.reason;
   $('#stop-list').innerHTML = route.stops.map(([name, note], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><div><h4>${name}</h4><p>${note}</p></div></li>`).join('');
   $('#tool-log').innerHTML = [['知识库检索', '老门东空间节点 · 固定结果'], ['天气与客流', '未连接 · 演示数据'], ['高德步行规划', `${route.tags[1]} · ${route.tags[2]} · 固定结果`]].map(([name, note]) => `<div><b>${name}</b><span>${note}</span><i>模拟</i></div>`).join('');
-  const points = route.point.split(' ').map(pair => pair.split(',').map(Number)); const line = points.map(point => point.join(',')).join(' ');
-  $('#route-map').innerHTML = `<rect width="520" height="440" fill="#202b2a"/><path d="M0 84H520M0 176H520M0 268H520M0 360H520M86 0V440M190 0V440M294 0V440M398 0V440" stroke="#31403d" stroke-width="1"/><path d="M18 360 C130 322 180 328 260 278 S400 210 520 184" fill="none" stroke="#344946" stroke-width="20" opacity=".55"/><polyline points="${line}" fill="none" stroke="${route.color}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>${points.map((point, index) => `<g transform="translate(${point[0]} ${point[1]})"><circle r="15" fill="#f6f1e9"/><circle r="10" fill="${route.color}"/><text y="4" text-anchor="middle" fill="#fff" font-family="system-ui" font-size="10" font-weight="700">${index + 1}</text></g>`).join('')}<text x="26" y="38" fill="#bdc7c1" font-family="serif" font-size="16">老门东 · 路线示意</text>`;
+}
+
+function renderMap() {
+  const target = $('#route-map');
+  const route = routes[state.routeId] || routes.quiet;
+  if (!window.L) {
+    target.textContent = '地图组件暂未加载。路线文字和节点仍可正常查看。';
+    target.classList.add('map-fallback');
+    return;
+  }
+  target.classList.remove('map-fallback');
+  if (!mapInstance) {
+    mapInstance = L.map(target, { zoomControl: true, scrollWheelZoom: true }).setView([32.0173, 118.7867], 16);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapInstance);
+  }
+  if (mapRouteLayer) mapInstance.removeLayer(mapRouteLayer);
+  mapMarkers.forEach(marker => mapInstance.removeLayer(marker));
+  mapMarkers = [];
+  mapRouteLayer = L.polyline(route.coords, { color: route.color, weight: 5, opacity: .88, dashArray: '10 8', lineCap: 'round' }).addTo(mapInstance);
+  route.coords.forEach((coord, index) => {
+    const marker = L.circleMarker(coord, { radius: 11, color: '#fffdf8', weight: 3, fillColor: route.color, fillOpacity: 1 }).addTo(mapInstance);
+    marker.bindTooltip(`${index + 1}. ${route.stops[index][0]}`, { direction: 'top', offset: [0, -8] });
+    marker.on('click', () => { state.checkin = index; state.mealAdded = false; renderCheckin(); go('checkin'); });
+    mapMarkers.push(marker);
+  });
+  mapInstance.fitBounds(mapRouteLayer.getBounds(), { padding: [35, 35], maxZoom: 17 });
+  window.setTimeout(() => mapInstance.invalidateSize(), 120);
 }
 
 function renderMemory() { const saved = JSON.parse(localStorage.getItem('soulwalking-demo') || 'null'); $('#memory-card').innerHTML = saved?.persona ? `<span>最近的空间人格</span><h3>${saved.persona.name}</h3><p>${routes[saved.routeId]?.title || '尚未生成路线'} · 仅保存在本机</p>` : '<span>还没有本地记录</span><h3>等你开始一次漫游</h3><p>完成测评或生成路线后，这里会显示本次演示记录。</p>'; }
@@ -119,3 +160,5 @@ $('#meal-adjust').addEventListener('click', () => { state.mealAdded = true; rend
 $('#clear-memory').addEventListener('click', () => { localStorage.removeItem('soulwalking-demo'); toast('已清除当前浏览器的演示记录'); renderMemory(); });
 const saved = JSON.parse(localStorage.getItem('soulwalking-demo') || 'null'); if (saved) { state.persona = saved.persona; state.routeId = saved.routeId || state.routeId; }
 renderQuestion(); renderRoute(); renderMemory();
+window.addEventListener('hashchange', () => show(activeScreenFromHash()));
+show(activeScreenFromHash());
