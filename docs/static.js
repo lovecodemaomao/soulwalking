@@ -26,13 +26,15 @@ let mapRouteLayer;
 let mapMarkers = [];
 
 function show(name) {
-  const valid = ['landing', 'quiz', 'persona', 'chat', 'thinking', 'route', 'checkin', 'memory'];
+  const valid = ['landing', 'quiz', 'persona', 'chat', 'thinking', 'route', 'route-details', 'checkin', 'memory'];
   name = valid.includes(name) ? name : 'landing';
-  all('.screen').forEach(screen => screen.classList.toggle('active', screen.id === name));
-  all('[data-go]').forEach(button => button.classList.toggle('selected', button.dataset.go === name));
+  const activeId = name === 'route-details' ? 'route' : name;
+  all('.screen').forEach(screen => screen.classList.toggle('active', screen.id === activeId));
+  $('#route').classList.toggle('detail-view', name === 'route-details');
+  all('[data-go]').forEach(button => button.classList.toggle('selected', button.dataset.go === name || (name === 'route-details' && button.dataset.go === 'route')));
   if (name === 'quiz') renderQuestion();
   if (name === 'chat') renderChat();
-  if (name === 'route') { renderRoute(); window.setTimeout(renderMap, 0); }
+  if (activeId === 'route') { renderRoute(); if (name === 'route') window.setTimeout(renderMap, 0); }
   if (name === 'memory') renderMemory();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
