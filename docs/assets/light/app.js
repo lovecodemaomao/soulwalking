@@ -1693,8 +1693,13 @@
   }
 
   function drawWalkMap(stops, w) {
+    if (STATIC_DEMO) {
+      const current = stops[w.idx] && shortNodeName(stops[w.idx].n);
+      $('walk-map').innerHTML = `<img class="route-static-map walk-static-map" src="${routeStaticMapUrl({ stops })}" alt="本次漫游路线示意图"><div class="walk-map-note">路线已随你的选择更新${current ? ` · 当前前往「${escapeHtml(current)}」` : ''}</div>`;
+      return;
+    }
     if (!state.route || !state.route.backend) {
-      $('walk-map').innerHTML = '<div class="walk-map-note">当前是本地演示路线，生成后端路线后会显示真实地图。</div>';
+      $('walk-map').innerHTML = '<div class="walk-map-note">路线正在准备中，请先看看下一站。</div>';
       return;
     }
     const scopedStops = stops.filter(s => nodeInOldMendong(s.n));
@@ -2107,6 +2112,12 @@
     const remaining = state.route.stops.slice(w.idx);
     w.lastFeedback = text;
     $('walk-input').value = '';
+    // GitHub Pages 展示版固定走本地模拟重规划，不尝试不存在的后端接口。
+    // 这样每一条现场反馈都会得到流畅、可见的路线变化。
+    if (STATIC_DEMO) {
+      simulateWalkReplan(text, currentNode || walkAnchorNode(), remaining);
+      return Promise.resolve();
+    }
     showWalkDecision('正在调整路线。', '我会保留已经走过的部分，并从当前位置重新计算后半段的节点顺序与真实步行道路。');
     toast('正在根据你的变化重新规划后半段路线…');
     state.walkReplanRequest = api('/api/v1/walk/replan', {
@@ -2434,6 +2445,65 @@
     } else {
       toast('附近暂时没有更合适的点了——不如就此收尾，也是一种圆满');
     }
+  }
+
+  function simulateWalkReplan(text, fromNode, remaining) {
+    const w = state.walk;
+    const count = Math.max(2, Math.min(4, remaining.length || 3));
+    const localFood = () => SPACE_NODES
+      .filter(node => /美食|茶|火塘|书店|市集|咖啡/.test(`${node.name} ${(node.tags || []).join(' ')}`) && !w.visitedIds.includes(node.id))
+      .map(node => ({ node, score: dist(fromNode, node) }))
+      .sort((a, b) => a.score - b.score)[0]?.node || pickFeedbackNode(fromNode, node => routeScore(node));
+
+    if (/人太多|安静|拥挤|清静/.test(text)) {
+      w.heatScale = .42;
+      replanRemaining(fromNode, count, '已换成更安静的后半段', {
+        source: 'quiet', changeType: '避开拥挤',
+        changeText: '根据“想要更安静”的反馈，降低热闹节点权重并重排后半段。',
+        decision: next => `我听见你想避开拥挤，于是把热闹空间的权重降下来，换成更适合慢慢走的后半段。下一站去 <b>「${escapeHtml(shortNodeName(next))}」</b>。`,
+      });
+      return;
+    }
+    if (/累|鞋|少走|休息|坐坐/.test(text)) {
+      w.heatScale = .7;
+      replanRemaining(fromNode, Math.min(2, count), '已把路线收短一些', {
+        source: 'short', changeType: '舒缓收束',
+        changeText: '根据“想少走一点”的反馈，保留已走部分并将后半段收束为较短路线。',
+        decision: next => `我把接下来的路线收短了，留出更多停下来休息的余地。下一站是 <b>「${escapeHtml(shortNodeName(next))}」</b>。`,
+      });
+      return;
+    }
+    if (/吃|喝|饿|餐|咖啡|茶/.test(text)) {
+      const node = localFood();
+      if (node && insertDynamicStop(node, 'inserted', '加入补给站', `根据“${text}”的反馈，在后半段插入一处可停留补给的节点。`,
+        next => `我先把一处适合停留、补给的节点放到下一站：<b>「${escapeHtml(shortNodeName(next))}」</b>。吃喝完后，再按更新后的路线继续走。`)) {
+        toast(`已加入补给站：${shortNodeName(node)}`);
+        return;
+      }
+    }
+    if (/回去|返程|结束/.test(text)) {
+      const prefix = state.route.stops.slice(0, w.idx);
+      const tail = buildExitTail(fromNode, 2);
+      state.route.stops = prefix.concat(tail);
+      state.route.pathCoordinates = [];
+      state.route.geometryComplete = false;
+      w.replanned = true;
+      pushRouteChange('温柔返程', '根据“想回去”的反馈，收束路线并朝出口方向安排后续节点。');
+      recalcRouteStats();
+      renderWalk();
+      const next = tail[0] && shortNodeName(tail[0].n);
+      showWalkDecision('我为你把路线收束好了。', next ? `接下来慢慢走向 <b>「${escapeHtml(next)}」</b>，之后就可以按自己的节奏离开。` : '已经走过的这一段，就很完整了。现在可以随时结束漫游。');
+      toast(next ? `已安排返程：下一站「${next}」` : '路线已收束，可以结束漫游');
+      return;
+    }
+    if (/再走|继续|多走/.test(text)) {
+      if (appendDynamicStops(2, 'added', '延长漫游', '根据“还想继续走”的反馈，在路线末端追加两处顺路节点。')) return;
+    }
+    replanRemaining(fromNode, count, '已按你的新想法更新路线', {
+      source: 'quiet', changeType: '动态调整',
+      changeText: `根据“${text}”的反馈，重新安排后半段路线。`,
+      decision: next => `我已经把这句话放进路线判断。下一站调整为 <b>「${escapeHtml(shortNodeName(next))}」</b>。`,
+    });
   }
 
   $('btn-end-walk').addEventListener('click', () => {
