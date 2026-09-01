@@ -41,6 +41,8 @@ const routes = [
 
 const grid = document.querySelector('#route-grid');
 const result = document.querySelector('#result');
+const quiz = document.querySelector('#route-quiz');
+const routeReason = document.querySelector('#route-reason');
 const selected = () => routes.find(route => route.id === sessionStorage.getItem('soulwalking-route')) || routes[0];
 
 function renderCards() {
@@ -52,15 +54,51 @@ function renderCards() {
   grid.querySelectorAll('[data-route]').forEach(button => button.addEventListener('click', () => showRoute(button.dataset.route)));
 }
 
-function showRoute(id) {
+function showRoute(id, reason = '') {
   const route = routes.find(item => item.id === id);
   sessionStorage.setItem('soulwalking-route', id);
   document.querySelector('#route-title').textContent = route.title;
   document.querySelector('#route-intro').textContent = route.intro;
+  routeReason.textContent = reason;
+  routeReason.hidden = !reason;
   document.querySelector('#route-meta').innerHTML = route.meta.map(item => `<span>${item}</span>`).join('');
   document.querySelector('#stop-list').innerHTML = route.stops.map(([name, note]) => `<li><h3>${name}</h3><p>${note}</p></li>`).join('');
   result.hidden = false;
   result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function recommendRoute(answers) {
+  const scores = { quiet: 0, culture: 0, lively: 0 };
+  const reasons = [];
+
+  if (answers.energy === 'quiet') {
+    scores.quiet += 3;
+    scores.culture += 1;
+    reasons.push('你更需要安静、可停留的空间');
+  } else {
+    scores.lively += 3;
+    reasons.push('你想感受街巷的人气与烟火');
+  }
+  if (answers.interest === 'culture') {
+    scores.culture += 3;
+    scores.quiet += 1;
+    reasons.push('你想把注意力留给建筑与旧城故事');
+  } else {
+    scores.lively += 3;
+    reasons.push('你期待小吃、手作与在地发现');
+  }
+  if (answers.pace === 'slow') {
+    scores.quiet += 2;
+    reasons.push('你希望用更松弛的节奏行走');
+  } else {
+    scores.culture += 1;
+    scores.lively += 1;
+    reasons.push('你愿意多走一点、多看几个地点');
+  }
+
+  const priority = ['quiet', 'culture', 'lively'];
+  const id = priority.reduce((best, current) => scores[current] > scores[best] ? current : best, priority[0]);
+  return { id, reason: `推荐理由：${reasons.join('；')}。` };
 }
 
 document.querySelector('#copy-route').addEventListener('click', async () => {
@@ -71,4 +109,13 @@ document.querySelector('#copy-route').addEventListener('click', async () => {
   window.setTimeout(() => { document.querySelector('#copy-route').textContent = '复制路线文字'; }, 1800);
 });
 document.querySelector('#print-route').addEventListener('click', () => window.print());
+document.querySelector('#retake-quiz').addEventListener('click', () => {
+  document.querySelector('#quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+quiz.addEventListener('submit', event => {
+  event.preventDefault();
+  const answers = Object.fromEntries(new FormData(quiz).entries());
+  const recommendation = recommendRoute(answers);
+  showRoute(recommendation.id, recommendation.reason);
+});
 renderCards();

@@ -12,17 +12,41 @@
     <header class="hero">
       <p class="eyebrow">SOULWALKING · 南京老门东</p>
       <h1>把今天，交给一段漫游</h1>
-      <p class="lede">这是 SoulWalking 的静态体验版：根据你此刻想要的节奏，挑选一条已经实地整理好的老门东路线。</p>
-      <a class="button primary" href="#routes">开始挑选路线 ↓</a>
+      <p class="lede">回答三道小题，让 SoulWalking 按你此刻的心情与步行偏好，推荐一条适合的老门东路线。</p>
+      <a class="button primary" href="#quiz">开始小测 ↓</a>
     </header>
 
     <section class="notice" aria-label="版本说明">
-      <strong>静态体验版</strong><span>路线为预设参考，不含 AI 实时生成、天气、导航、用户记忆与高德实时服务。</span>
+      <strong>静态体验版</strong><span>会根据本次选择推荐预设路线；不含 AI 实时生成、天气、导航与高德实时服务。</span>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <p class="eyebrow">A SMALL CHECK-IN</p>
+      <h2>先听听你今天想怎么走</h2>
+      <p class="quiz-lede">没有标准答案，按直觉选择即可。我们会从安静感、人文兴趣和漫游节奏中推荐路线。</p>
+      <form id="route-quiz" class="quiz-form">
+        <fieldset>
+          <legend><span>01</span> 此刻的你更想靠近哪种氛围？</legend>
+          <label><input type="radio" name="energy" value="quiet" required> 安静一点，想留些独处和呼吸的空间</label>
+          <label><input type="radio" name="energy" value="lively"> 热闹一点，想感受街巷的人气</label>
+        </fieldset>
+        <fieldset>
+          <legend><span>02</span> 今天最想带走什么？</legend>
+          <label><input type="radio" name="interest" value="culture" required> 建筑、故事和旧城的细节</label>
+          <label><input type="radio" name="interest" value="food"> 小吃、手作和有烟火气的发现</label>
+        </fieldset>
+        <fieldset>
+          <legend><span>03</span> 你希望今天的脚步？</legend>
+          <label><input type="radio" name="pace" value="slow" required> 轻松一些，慢慢走、随时停</label>
+          <label><input type="radio" name="pace" value="explore"> 多走一点，想多看几个地点</label>
+        </fieldset>
+        <button class="button primary" type="submit">为我推荐路线</button>
+      </form>
     </section>
 
     <section id="routes" class="section">
-      <p class="eyebrow">CHOOSE YOUR WALK</p>
-      <h2>此刻，你更需要什么？</h2>
+      <p class="eyebrow">PRESET ROUTES</p>
+      <h2>也可以直接挑一条</h2>
       <div class="route-grid" id="route-grid"></div>
     </section>
 
@@ -30,11 +54,13 @@
       <p class="eyebrow">YOUR PRESET ROUTE</p>
       <h2 id="route-title"></h2>
       <p id="route-intro" class="route-intro"></p>
+      <p id="route-reason" class="route-reason" hidden></p>
       <div id="route-meta" class="meta"></div>
       <ol id="stop-list" class="stops"></ol>
       <div class="route-actions">
         <button id="copy-route" class="button secondary">复制路线文字</button>
         <button id="print-route" class="button secondary">打印 / 保存为 PDF</button>
+        <button id="retake-quiz" class="button secondary">重新选择偏好</button>
       </div>
     </section>
 

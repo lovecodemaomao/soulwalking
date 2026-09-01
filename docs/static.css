@@ -13,12 +13,23 @@ h1,h2,h3,p { margin-top:0; } h1 { max-width:760px; margin-bottom:16px; font-size
 .notice { margin:-26px 0 66px; padding:16px 20px; display:flex; gap:14px; flex-wrap:wrap; background:#fff7e8; border:1px solid #e6c88e; border-radius:10px; font-size:14px; }
 .notice strong { color:#9b5c0b; }
 .section { padding:56px 0; border-top:1px solid var(--line); }
+.quiz-section { max-width:860px; }
+.quiz-lede { max-width:650px; color:#5c655e; }
+.quiz-form { display:grid; gap:16px; margin-top:28px; }
+.quiz-form fieldset { margin:0; padding:20px 22px; border:1px solid var(--line); border-radius:14px; background:var(--card); }
+.quiz-form legend { padding:0 6px; font-size:18px; font-weight:700; }
+.quiz-form legend span { display:inline-grid; width:26px; height:26px; margin-right:7px; place-items:center; border-radius:50%; color:#fff; background:var(--accent); font:700 11px system-ui,sans-serif; vertical-align:2px; }
+.quiz-form label { display:block; margin:12px 0 0; padding:12px 14px; border:1px solid transparent; border-radius:9px; background:#f6f2ea; cursor:pointer; transition:.16s ease; }
+.quiz-form label:hover { border-color:#b8cfc5; background:#edf5f1; }
+.quiz-form input { margin-right:8px; accent-color:var(--jade); }
+.quiz-form .primary { justify-self:start; margin-top:4px; }
 .route-grid,.steps { display:grid; gap:18px; grid-template-columns:repeat(3,1fr); }
 .route-card { min-height:260px; padding:26px; border:1px solid var(--line); border-radius:16px; background:var(--card); display:flex; flex-direction:column; align-items:flex-start; }
 .route-card:nth-child(2) { background:#edf5f1; } .route-card:nth-child(3) { background:#fff0e7; }
 .route-card h3 { margin:7px 0; font-size:25px; } .route-card p { flex:1; }
 .tag,.meta span { display:inline-block; border-radius:999px; padding:4px 9px; background:#e9eee8; color:#496057; font:12px system-ui,sans-serif; }
 .result { padding-bottom:72px; } .route-intro { max-width:730px; font-size:19px; }
+.route-reason { max-width:760px; margin:18px 0; padding:13px 16px; border-left:4px solid var(--jade); background:#edf5f1; color:#31574c; }
 .meta { display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 28px; }
 .meta span { background:#e4efe9; }
 .stops { margin:0; padding:0; list-style:none; counter-reset:step; max-width:800px; }
